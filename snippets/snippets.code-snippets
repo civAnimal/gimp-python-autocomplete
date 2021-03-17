@@ -1,1 +1,4222 @@
-
+{
+  "image_set_colormap": {
+      "prefix": "image_set_colormap",
+      "body": "pdb.gimp_image_set_colormap(${1:image}, ${2:num_bytes}, ${3:colormap})"
+    },
+  "context_get_transform_direction": {
+      "prefix": "context_get_transform_direction",
+      "body": "pdb.gimp_context_get_transform_direction()"
+    },
+  "image_scale": {
+      "prefix": "image_scale",
+      "body": "pdb.gimp_image_scale(${1:image}, ${2:new_width}, ${3:new_height})"
+    },
+  "vectors_bezier_stroke_cubicto": {
+      "prefix": "vectors_bezier_stroke_cubicto",
+      "body": "pdb.gimp_vectors_bezier_stroke_cubicto(${1:vectors}, ${2:stroke_id}, ${3:x0}, ${4:y0}, ${5:x1}, ${6:y1}, ${7:x2}, ${8:y2})"
+    },
+  "blinds": {
+      "prefix": "blinds",
+      "body": "pdb.plug_in_blinds(${1:image}, ${2:drawable}, ${3:angle_dsp}, ${4:num_segments}, ${5:orientation}, ${6:bg_transparent})"
+    },
+  "floating_sel_remove": {
+      "prefix": "floating_sel_remove",
+      "body": "pdb.gimp_floating_sel_remove(${1:floating_sel})"
+    },
+  "gfig": {
+      "prefix": "gfig",
+      "body": "pdb.plug_in_gfig(${1:image}, ${2:drawable}, ${3:dummy})"
+    },
+  "file_raw_placeholder_mef_load": {
+      "prefix": "file_raw_placeholder_mef_load",
+      "body": "pdb.file_raw_placeholder_mef_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_pick_correlate_layer": {
+      "prefix": "image_pick_correlate_layer",
+      "body": "pdb.gimp_image_pick_correlate_layer(${1:image}, ${2:x}, ${3:y})"
+    },
+  "palettes_popup": {
+      "prefix": "palettes_popup",
+      "body": "pdb.gimp_palettes_popup(${1:palette_callback}, ${2:popup_title}, ${3:initial_palette})"
+    },
+  "plugin_help_register": {
+      "prefix": "plugin_help_register",
+      "body": "pdb.gimp_plugin_help_register(${1:domain_name}, ${2:domain_uri})"
+    },
+  "unit_get_factor": {
+      "prefix": "unit_get_factor",
+      "body": "pdb.gimp_unit_get_factor(${1:unit_id})"
+    },
+  "gradient_segment_set_right_color": {
+      "prefix": "gradient_segment_set_right_color",
+      "body": "pdb.gimp_gradient_segment_set_right_color(${1:name}, ${2:segment}, ${3:color}, ${4:opacity})"
+    },
+  "make_brush_elliptical": {
+      "prefix": "make_brush_elliptical",
+      "body": "pdb.script_fu_make_brush_elliptical(${1:string}, ${2:value}, ${3:value}, ${4:value})"
+    },
+  "file_raw_placeholder_raf_load": {
+      "prefix": "file_raw_placeholder_raf_load",
+      "body": "pdb.file_raw_placeholder_raf_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_png_set_defaults": {
+      "prefix": "file_png_set_defaults",
+      "body": "pdb.file_png_set_defaults(${1:interlace}, ${2:compression}, ${3:bkgd}, ${4:gama}, ${5:offs}, ${6:phys}, ${7:time}, ${8:comment}, ${9:svtrans})"
+    },
+  "context_set_interpolation": {
+      "prefix": "context_set_interpolation",
+      "body": "pdb.gimp_context_set_interpolation(${1:interpolation})"
+    },
+  "context_list_paint_methods": {
+      "prefix": "context_list_paint_methods",
+      "body": "pdb.gimp_context_list_paint_methods()"
+    },
+  "slice": {
+      "prefix": "slice",
+      "body": "pdb.python_fu_slice(${1:image}, ${2:drawable}, ${3:save_path}, ${4:html_filename}, ${5:image_basename}, ${6:image_extension}, ${7:separate_image_dir}, ${8:relative_image_path}, ${9:cellspacing}, ${10:animate}, ${11:skip_caps})"
+    },
+  "image_get_item_position": {
+      "prefix": "image_get_item_position",
+      "body": "pdb.gimp_image_get_item_position(${1:image}, ${2:item})"
+    },
+  "gradient_segment_range_move": {
+      "prefix": "gradient_segment_range_move",
+      "body": "pdb.gimp_gradient_segment_range_move(${1:name}, ${2:start_segment}, ${3:end_segment}, ${4:delta}, ${5:control_compress})"
+    },
+  "selection_to_image": {
+      "prefix": "selection_to_image",
+      "body": "pdb.script_fu_selection_to_image(${1:image}, ${2:drawable})"
+    },
+  "borderaverage": {
+      "prefix": "borderaverage",
+      "body": "pdb.plug_in_borderaverage(${1:image}, ${2:drawable}, ${3:thickness}, ${4:bucket_exponent})"
+    },
+  "console": {
+      "prefix": "console",
+      "body": "pdb.plug_in_script_fu_console()"
+    },
+  "image_undo_group_end": {
+      "prefix": "image_undo_group_end",
+      "body": "pdb.gimp_image_undo_group_end(${1:image})"
+    },
+  "item_get_lock_content": {
+      "prefix": "item_get_lock_content",
+      "body": "pdb.gimp_item_get_lock_content(${1:item})"
+    },
+  "item_get_name": {
+      "prefix": "item_get_name",
+      "body": "pdb.gimp_item_get_name(${1:item})"
+    },
+  "gradient_get_uniform_samples": {
+      "prefix": "gradient_get_uniform_samples",
+      "body": "pdb.gimp_gradient_get_uniform_samples(${1:name}, ${2:num_samples}, ${3:reverse})"
+    },
+  "image_flatten": {
+      "prefix": "image_flatten",
+      "body": "pdb.gimp_image_flatten(${1:image})"
+    },
+  "selection_translate": {
+      "prefix": "selection_translate",
+      "body": "pdb.gimp_selection_translate(${1:image}, ${2:offx}, ${3:offy})"
+    },
+  "qbist": {
+      "prefix": "qbist",
+      "body": "pdb.plug_in_qbist(${1:image}, ${2:drawable})"
+    },
+  "gradient_segment_range_flip": {
+      "prefix": "gradient_segment_range_flip",
+      "body": "pdb.gimp_gradient_segment_range_flip(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "brush_get_spacing": {
+      "prefix": "brush_get_spacing",
+      "body": "pdb.gimp_brush_get_spacing(${1:name})"
+    },
+  "context_get_gradient_blend_color_space": {
+      "prefix": "context_get_gradient_blend_color_space",
+      "body": "pdb.gimp_context_get_gradient_blend_color_space()"
+    },
+  "vectors_bezier_stroke_new_ellipse": {
+      "prefix": "vectors_bezier_stroke_new_ellipse",
+      "body": "pdb.gimp_vectors_bezier_stroke_new_ellipse(${1:vectors}, ${2:x0}, ${3:y0}, ${4:radius_x}, ${5:radius_y}, ${6:angle})"
+    },
+  "cml_explorer": {
+      "prefix": "cml_explorer",
+      "body": "pdb.plug_in_cml_explorer(${1:image}, ${2:drawable}, ${3:parameter_filename})"
+    },
+  "file_dds_load": {
+      "prefix": "file_dds_load",
+      "body": "pdb.file_dds_load(${1:filename}, ${2:raw_filename}, ${3:load_mipmaps}, ${4:decode_images})"
+    },
+  "image_convert_set_dither_matrix": {
+      "prefix": "image_convert_set_dither_matrix",
+      "body": "pdb.gimp_image_convert_set_dither_matrix(${1:width}, ${2:height}, ${3:matrix_length}, ${4:matrix})"
+    },
+  "register_thumbnail_loader": {
+      "prefix": "register_thumbnail_loader",
+      "body": "pdb.gimp_register_thumbnail_loader(${1:load_proc}, ${2:thumb_proc})"
+    },
+  "text_layer_set_antialias": {
+      "prefix": "text_layer_set_antialias",
+      "body": "pdb.gimp_text_layer_set_antialias(${1:layer}, ${2:antialias})"
+    },
+  "file_png_get_defaults": {
+      "prefix": "file_png_get_defaults",
+      "body": "pdb.file_png_get_defaults()"
+    },
+  "edit_copy_visible": {
+      "prefix": "edit_copy_visible",
+      "body": "pdb.gimp_edit_copy_visible(${1:image})"
+    },
+  "file_sgi_load": {
+      "prefix": "file_sgi_load",
+      "body": "pdb.file_sgi_load(${1:filename}, ${2:raw_filename})"
+    },
+  "brush_set_spikes": {
+      "prefix": "brush_set_spikes",
+      "body": "pdb.gimp_brush_set_spikes(${1:name}, ${2:spikes_in})"
+    },
+  "file_gif_save": {
+      "prefix": "file_gif_save",
+      "body": "pdb.file_gif_save(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:interlace}, ${6:loop}, ${7:default_delay}, ${8:default_dispose})"
+    },
+  "max_rgb": {
+      "prefix": "max_rgb",
+      "body": "pdb.plug_in_max_rgb(${1:image}, ${2:drawable}, ${3:max_p})"
+    },
+  "file_heif_save": {
+      "prefix": "file_heif_save",
+      "body": "pdb.file_heif_save(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:quality}, ${6:lossless})"
+    },
+  "file_pcx_save": {
+      "prefix": "file_pcx_save",
+      "body": "pdb.file_pcx_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "fuzzy_border": {
+      "prefix": "fuzzy_border",
+      "body": "pdb.script_fu_fuzzy_border(${1:image}, ${2:drawable}, ${3:color}, ${4:value}, ${5:toggle}, ${6:value}, ${7:toggle}, ${8:value}, ${9:toggle}, ${10:toggle})"
+    },
+  "image_reorder_item": {
+      "prefix": "image_reorder_item",
+      "body": "pdb.gimp_image_reorder_item(${1:image}, ${2:item}, ${3:parent}, ${4:position})"
+    },
+  "file_raw_placeholder_erf_load": {
+      "prefix": "file_raw_placeholder_erf_load",
+      "body": "pdb.file_raw_placeholder_erf_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_csource_save": {
+      "prefix": "file_csource_save",
+      "body": "pdb.file_csource_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "image_pick_color": {
+      "prefix": "image_pick_color",
+      "body": "pdb.gimp_image_pick_color(${1:image}, ${2:drawable}, ${3:x}, ${4:y}, ${5:sample_merged}, ${6:sample_average}, ${7:average_radius})"
+    },
+  "layer_get_composite_mode": {
+      "prefix": "layer_get_composite_mode",
+      "body": "pdb.gimp_layer_get_composite_mode(${1:layer})"
+    },
+  "brush_set_spacing": {
+      "prefix": "brush_set_spacing",
+      "body": "pdb.gimp_brush_set_spacing(${1:name}, ${2:spacing})"
+    },
+  "drawable_width": {
+      "prefix": "drawable_width",
+      "body": "pdb.gimp_drawable_width(${1:drawable})"
+    },
+  "help_using_photography": {
+      "prefix": "help_using_photography",
+      "body": "pdb.gimp_help_using_photography()"
+    },
+  "context_set_ink_angle": {
+      "prefix": "context_set_ink_angle",
+      "body": "pdb.gimp_context_set_ink_angle(${1:angle})"
+    },
+  "pixelize": {
+      "prefix": "pixelize",
+      "body": "pdb.plug_in_pixelize(${1:image}, ${2:drawable}, ${3:pixel_width})"
+    },
+  "context_get_line_width_unit": {
+      "prefix": "context_get_line_width_unit",
+      "body": "pdb.gimp_context_get_line_width_unit()"
+    },
+  "channel_new_from_component": {
+      "prefix": "channel_new_from_component",
+      "body": "pdb.gimp_channel_new_from_component(${1:image}, ${2:component}, ${3:name})"
+    },
+  "patterns_close_popup": {
+      "prefix": "patterns_close_popup",
+      "body": "pdb.gimp_patterns_close_popup(${1:pattern_callback})"
+    },
+  "file_pfm_save": {
+      "prefix": "file_pfm_save",
+      "body": "pdb.file_pfm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "file_ps_load": {
+      "prefix": "file_ps_load",
+      "body": "pdb.file_ps_load(${1:filename}, ${2:raw_filename})"
+    },
+  "text_layer_resize": {
+      "prefix": "text_layer_resize",
+      "body": "pdb.gimp_text_layer_resize(${1:layer}, ${2:width}, ${3:height})"
+    },
+  "gradient_new": {
+      "prefix": "gradient_new",
+      "body": "pdb.gimp_gradient_new(${1:name})"
+    },
+  "gradient_segment_get_blending_function": {
+      "prefix": "gradient_segment_get_blending_function",
+      "body": "pdb.gimp_gradient_segment_get_blending_function(${1:name}, ${2:segment})"
+    },
+  "clone_default": {
+      "prefix": "clone_default",
+      "body": "pdb.gimp_clone_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "file_save_rgbe": {
+      "prefix": "file_save_rgbe",
+      "body": "pdb.file_save_rgbe(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "image_get_channels": {
+      "prefix": "image_get_channels",
+      "body": "pdb.gimp_image_get_channels(${1:image})"
+    },
+  "brush_duplicate": {
+      "prefix": "brush_duplicate",
+      "body": "pdb.gimp_brush_duplicate(${1:name})"
+    },
+  "image_resize_to_layers": {
+      "prefix": "image_resize_to_layers",
+      "body": "pdb.gimp_image_resize_to_layers(${1:image})"
+    },
+  "file_bmp_save": {
+      "prefix": "file_bmp_save",
+      "body": "pdb.file_bmp_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "image_select_color": {
+      "prefix": "image_select_color",
+      "body": "pdb.gimp_image_select_color(${1:image}, ${2:operation}, ${3:drawable}, ${4:color})"
+    },
+  "drawable_type": {
+      "prefix": "drawable_type",
+      "body": "pdb.gimp_drawable_type(${1:drawable})"
+    },
+  "get_parasite_list": {
+      "prefix": "get_parasite_list",
+      "body": "pdb.gimp_get_parasite_list()"
+    },
+  "file_header_save": {
+      "prefix": "file_header_save",
+      "body": "pdb.file_header_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "image_lower_item": {
+      "prefix": "image_lower_item",
+      "body": "pdb.gimp_image_lower_item(${1:image}, ${2:item})"
+    },
+  "debug_timer_end": {
+      "prefix": "debug_timer_end",
+      "body": "pdb.gimp_debug_timer_end()"
+    },
+  "image_set_metadata": {
+      "prefix": "image_set_metadata",
+      "body": "pdb.gimp_image_set_metadata(${1:image}, ${2:metadata_string})"
+    },
+  "file_raw_placeholder_bay_load": {
+      "prefix": "file_raw_placeholder_bay_load",
+      "body": "pdb.file_raw_placeholder_bay_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_fli_save": {
+      "prefix": "file_fli_save",
+      "body": "pdb.file_fli_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:from_frame}, ${6:to_frame})"
+    },
+  "smooth_palette": {
+      "prefix": "smooth_palette",
+      "body": "pdb.plug_in_smooth_palette(${1:image}, ${2:drawable}, ${3:width}, ${4:height}, ${5:ntries}, ${6:show_image})"
+    },
+  "context_get_line_join_style": {
+      "prefix": "context_get_line_join_style",
+      "body": "pdb.gimp_context_get_line_join_style()"
+    },
+  "image_get_vectors_by_name": {
+      "prefix": "image_get_vectors_by_name",
+      "body": "pdb.gimp_image_get_vectors_by_name(${1:image}, ${2:name})"
+    },
+  "text_layer_get_justification": {
+      "prefix": "text_layer_get_justification",
+      "body": "pdb.gimp_text_layer_get_justification(${1:layer})"
+    },
+  "gradients_close_popup": {
+      "prefix": "gradients_close_popup",
+      "body": "pdb.gimp_gradients_close_popup(${1:gradient_callback})"
+    },
+  "edit_named_cut": {
+      "prefix": "edit_named_cut",
+      "body": "pdb.gimp_edit_named_cut(${1:drawable}, ${2:buffer_name})"
+    },
+  "image_get_selection": {
+      "prefix": "image_get_selection",
+      "body": "pdb.gimp_image_get_selection(${1:image})"
+    },
+  "item_get_visible": {
+      "prefix": "item_get_visible",
+      "body": "pdb.gimp_item_get_visible(${1:item})"
+    },
+  "blur": {
+      "prefix": "blur",
+      "body": "pdb.plug_in_blur(${1:image}, ${2:drawable})"
+    },
+  "context_get_foreground": {
+      "prefix": "context_get_foreground",
+      "body": "pdb.gimp_context_get_foreground()"
+    },
+  "vectors_stroke_rotate": {
+      "prefix": "vectors_stroke_rotate",
+      "body": "pdb.gimp_vectors_stroke_rotate(${1:vectors}, ${2:stroke_id}, ${3:center_x}, ${4:center_y}, ${5:angle})"
+    },
+  "item_transform_rotate_simple": {
+      "prefix": "item_transform_rotate_simple",
+      "body": "pdb.gimp_item_transform_rotate_simple(${1:item}, ${2:rotate_type}, ${3:auto_center}, ${4:center_x}, ${5:center_y})"
+    },
+  "register_file_handler_uri": {
+      "prefix": "register_file_handler_uri",
+      "body": "pdb.gimp_register_file_handler_uri(${1:procedure_name})"
+    },
+  "image_get_metadata": {
+      "prefix": "image_get_metadata",
+      "body": "pdb.gimp_image_get_metadata(${1:image})"
+    },
+  "context_set_ink_tilt_sensitivity": {
+      "prefix": "context_set_ink_tilt_sensitivity",
+      "body": "pdb.gimp_context_set_ink_tilt_sensitivity(${1:tilt})"
+    },
+  "fonts_refresh": {
+      "prefix": "fonts_refresh",
+      "body": "pdb.gimp_fonts_refresh()"
+    },
+  "zealouscrop": {
+      "prefix": "zealouscrop",
+      "body": "pdb.plug_in_zealouscrop(${1:image}, ${2:drawable})"
+    },
+  "file_gif_save2": {
+      "prefix": "file_gif_save2",
+      "body": "pdb.file_gif_save2(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:interlace}, ${6:loop}, ${7:default_delay}, ${8:default_dispose}, ${9:as_animation}, ${10:force_delay}, ${11:force_dispose})"
+    },
+  "plugin_menu_branch_register": {
+      "prefix": "plugin_menu_branch_register",
+      "body": "pdb.gimp_plugin_menu_branch_register(${1:menu_path}, ${2:menu_name})"
+    },
+  "item_set_visible": {
+      "prefix": "item_set_visible",
+      "body": "pdb.gimp_item_set_visible(${1:item}, ${2:visible})"
+    },
+  "file_save_thumbnail": {
+      "prefix": "file_save_thumbnail",
+      "body": "pdb.gimp_file_save_thumbnail(${1:image}, ${2:filename})"
+    },
+  "icc_profile_apply_rgb": {
+      "prefix": "icc_profile_apply_rgb",
+      "body": "pdb.plug_in_icc_profile_apply_rgb(${1:image}, ${2:intent}, ${3:bpc})"
+    },
+  "context_set_stroke_method": {
+      "prefix": "context_set_stroke_method",
+      "body": "pdb.gimp_context_set_stroke_method(${1:stroke_method})"
+    },
+  "cubism": {
+      "prefix": "cubism",
+      "body": "pdb.plug_in_cubism(${1:image}, ${2:drawable}, ${3:tile_size}, ${4:tile_saturation}, ${5:bg_color})"
+    },
+  "item_get_children": {
+      "prefix": "item_get_children",
+      "body": "pdb.gimp_item_get_children(${1:item})"
+    },
+  "lighting": {
+      "prefix": "lighting",
+      "body": "pdb.plug_in_lighting(${1:image}, ${2:drawable}, ${3:bumpdrawable}, ${4:envdrawable}, ${5:dobumpmap}, ${6:doenvmap}, ${7:bumpmaptype}, ${8:lighttype}, ${9:lightcolor}, ${10:lightposition_x}, ${11:lightposition_y}, ${12:lightposition_z}, ${13:lightdirection_x}, ${14:lightdirection_y}, ${15:lightdirection_z}, ${16:ambient_intensity}, ${17:diffuse_intensity}, ${18:diffuse_reflectivity}, ${19:specular_reflectivity}, ${20:highlight}, ${21:antialiasing}, ${22:newimage}, ${23:transparentbackground})"
+    },
+  "gauss_iir2": {
+      "prefix": "gauss_iir2",
+      "body": "pdb.plug_in_gauss_iir2(${1:image}, ${2:drawable}, ${3:horizontal}, ${4:vertical})"
+    },
+  "context_set_sample_threshold_int": {
+      "prefix": "context_set_sample_threshold_int",
+      "body": "pdb.gimp_context_set_sample_threshold_int(${1:sample_threshold})"
+    },
+  "layer_set_mode": {
+      "prefix": "layer_set_mode",
+      "body": "pdb.gimp_layer_set_mode(${1:layer}, ${2:mode})"
+    },
+  "register_file_handler_mime": {
+      "prefix": "register_file_handler_mime",
+      "body": "pdb.gimp_register_file_handler_mime(${1:procedure_name}, ${2:mime_types})"
+    },
+  "text_layer_get_antialias": {
+      "prefix": "text_layer_get_antialias",
+      "body": "pdb.gimp_text_layer_get_antialias(${1:layer})"
+    },
+  "image_select_contiguous_color": {
+      "prefix": "image_select_contiguous_color",
+      "body": "pdb.gimp_image_select_contiguous_color(${1:image}, ${2:operation}, ${3:drawable}, ${4:x}, ${5:y})"
+    },
+  "image_set_component_active": {
+      "prefix": "image_set_component_active",
+      "body": "pdb.gimp_image_set_component_active(${1:image}, ${2:component}, ${3:active})"
+    },
+  "item_is_group": {
+      "prefix": "item_is_group",
+      "body": "pdb.gimp_item_is_group(${1:item})"
+    },
+  "colormap_remap": {
+      "prefix": "colormap_remap",
+      "body": "pdb.plug_in_colormap_remap(${1:image}, ${2:drawable}, ${3:num_colors}, ${4:map})"
+    },
+  "item_set_color_tag": {
+      "prefix": "item_set_color_tag",
+      "body": "pdb.gimp_item_set_color_tag(${1:item}, ${2:color_tag})"
+    },
+  "item_is_vectors": {
+      "prefix": "item_is_vectors",
+      "body": "pdb.gimp_item_is_vectors(${1:item})"
+    },
+  "palette_add_entry": {
+      "prefix": "palette_add_entry",
+      "body": "pdb.gimp_palette_add_entry(${1:name}, ${2:entry_name}, ${3:color})"
+    },
+  "file_raw_placeholder_minolta_load": {
+      "prefix": "file_raw_placeholder_minolta_load",
+      "body": "pdb.file_raw_placeholder_minolta_load(${1:filename}, ${2:raw_filename})"
+    },
+  "message": {
+      "prefix": "message",
+      "body": "pdb.gimp_message(${1:message})"
+    },
+  "ifscompose": {
+      "prefix": "ifscompose",
+      "body": "pdb.plug_in_ifscompose(${1:image}, ${2:drawable})"
+    },
+  "image_select_item": {
+      "prefix": "image_select_item",
+      "body": "pdb.gimp_image_select_item(${1:image}, ${2:operation}, ${3:item})"
+    },
+  "image_get_default_new_layer_mode": {
+      "prefix": "image_get_default_new_layer_mode",
+      "body": "pdb.gimp_image_get_default_new_layer_mode(${1:image})"
+    },
+  "file_tiff_save2": {
+      "prefix": "file_tiff_save2",
+      "body": "pdb.file_tiff_save2(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:compression}, ${6:save_transp_pixels})"
+    },
+  "file_load_layers": {
+      "prefix": "file_load_layers",
+      "body": "pdb.gimp_file_load_layers(${1:image}, ${2:filename})"
+    },
+  "difference_clouds": {
+      "prefix": "difference_clouds",
+      "body": "pdb.script_fu_difference_clouds(${1:image}, ${2:drawable})"
+    },
+  "context_set_brush": {
+      "prefix": "context_set_brush",
+      "body": "pdb.gimp_context_set_brush(${1:name})"
+    },
+  "randomize_hurl": {
+      "prefix": "randomize_hurl",
+      "body": "pdb.plug_in_randomize_hurl(${1:image}, ${2:drawable}, ${3:rndm_pct}, ${4:rndm_rcount}, ${5:randomize}, ${6:seed})"
+    },
+  "image_merge_layer_group": {
+      "prefix": "image_merge_layer_group",
+      "body": "pdb.gimp_image_merge_layer_group(${1:image}, ${2:layer_group})"
+    },
+  "context_get_ink_angle": {
+      "prefix": "context_get_ink_angle",
+      "body": "pdb.gimp_context_get_ink_angle()"
+    },
+  "context_set_line_miter_limit": {
+      "prefix": "context_set_line_miter_limit",
+      "body": "pdb.gimp_context_set_line_miter_limit(${1:miter_limit})"
+    },
+  "image_get_parasite": {
+      "prefix": "image_get_parasite",
+      "body": "pdb.gimp_image_get_parasite(${1:image}, ${2:name})"
+    },
+  "context_get_mypaint_brush": {
+      "prefix": "context_get_mypaint_brush",
+      "body": "pdb.gimp_context_get_mypaint_brush()"
+    },
+  "vectors_stroke_interpolate": {
+      "prefix": "vectors_stroke_interpolate",
+      "body": "pdb.gimp_vectors_stroke_interpolate(${1:vectors}, ${2:stroke_id}, ${3:precision})"
+    },
+  "fractal_trace": {
+      "prefix": "fractal_trace",
+      "body": "pdb.plug_in_fractal_trace(${1:image}, ${2:drawable}, ${3:xmin}, ${4:xmax}, ${5:ymin}, ${6:ymax}, ${7:depth}, ${8:outside_type})"
+    },
+  "register_magic_load_handler": {
+      "prefix": "register_magic_load_handler",
+      "body": "pdb.gimp_register_magic_load_handler(${1:procedure_name}, ${2:extensions}, ${3:prefixes}, ${4:magics})"
+    },
+  "file_raw_placeholder_dng_load": {
+      "prefix": "file_raw_placeholder_dng_load",
+      "body": "pdb.file_raw_placeholder_dng_load(${1:filename}, ${2:raw_filename})"
+    },
+  "palette_set_columns": {
+      "prefix": "palette_set_columns",
+      "body": "pdb.gimp_palette_set_columns(${1:name}, ${2:columns})"
+    },
+  "edge": {
+      "prefix": "edge",
+      "body": "pdb.plug_in_edge(${1:image}, ${2:drawable}, ${3:amount}, ${4:warpmode}, ${5:edgemode})"
+    },
+  "file_psd_load": {
+      "prefix": "file_psd_load",
+      "body": "pdb.file_psd_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_get_floating_sel": {
+      "prefix": "image_get_floating_sel",
+      "body": "pdb.gimp_image_get_floating_sel(${1:image})"
+    },
+  "goat_exercise": {
+      "prefix": "goat_exercise",
+      "body": "pdb.plug_in_goat_exercise(${1:image}, ${2:drawable})"
+    },
+  "text_console": {
+      "prefix": "text_console",
+      "body": "pdb.plug_in_script_fu_text_console()"
+    },
+  "context_set_sample_criterion": {
+      "prefix": "context_set_sample_criterion",
+      "body": "pdb.gimp_context_set_sample_criterion(${1:sample_criterion})"
+    },
+  "image_new_with_precision": {
+      "prefix": "image_new_with_precision",
+      "body": "pdb.gimp_image_new_with_precision(${1:width}, ${2:height}, ${3:type}, ${4:precision})"
+    },
+  "drawable_brightness_contrast": {
+      "prefix": "drawable_brightness_contrast",
+      "body": "pdb.gimp_drawable_brightness_contrast(${1:drawable}, ${2:brightness}, ${3:contrast})"
+    },
+  "gradient_segment_get_left_color": {
+      "prefix": "gradient_segment_get_left_color",
+      "body": "pdb.gimp_gradient_segment_get_left_color(${1:name}, ${2:segment})"
+    },
+  "file_pat_load": {
+      "prefix": "file_pat_load",
+      "body": "pdb.file_pat_load(${1:dummy_param}, ${2:uri}, ${3:raw_uri})"
+    },
+  "patterns_set_popup": {
+      "prefix": "patterns_set_popup",
+      "body": "pdb.gimp_patterns_set_popup(${1:pattern_callback}, ${2:pattern_name})"
+    },
+  "selection_invert": {
+      "prefix": "selection_invert",
+      "body": "pdb.gimp_selection_invert(${1:image})"
+    },
+  "file_png_load": {
+      "prefix": "file_png_load",
+      "body": "pdb.file_png_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_pdf_load": {
+      "prefix": "file_pdf_load",
+      "body": "pdb.file_pdf_load(${1:filename}, ${2:raw_filename})"
+    },
+  "normalize": {
+      "prefix": "normalize",
+      "body": "pdb.plug_in_normalize(${1:image}, ${2:drawable})"
+    },
+  "progress_cancel": {
+      "prefix": "progress_cancel",
+      "body": "pdb.gimp_progress_cancel(${1:progress_callback})"
+    },
+  "layer_copy": {
+      "prefix": "layer_copy",
+      "body": "pdb.gimp_layer_copy(${1:layer}, ${2:add_alpha})"
+    },
+  "drawable_edit_gradient_fill": {
+      "prefix": "drawable_edit_gradient_fill",
+      "body": "pdb.gimp_drawable_edit_gradient_fill(${1:drawable}, ${2:gradient_type}, ${3:offset}, ${4:supersample}, ${5:supersample_max_depth}, ${6:supersample_threshold}, ${7:dither}, ${8:x1}, ${9:y1}, ${10:x2}, ${11:y2})"
+    },
+  "layer_set_composite_space": {
+      "prefix": "layer_set_composite_space",
+      "body": "pdb.gimp_layer_set_composite_space(${1:layer}, ${2:composite_space})"
+    },
+  "selection_feather": {
+      "prefix": "selection_feather",
+      "body": "pdb.gimp_selection_feather(${1:image}, ${2:radius})"
+    },
+  "item_transform_shear": {
+      "prefix": "item_transform_shear",
+      "body": "pdb.gimp_item_transform_shear(${1:item}, ${2:shear_type}, ${3:magnitude})"
+    },
+  "icc_profile_apply": {
+      "prefix": "icc_profile_apply",
+      "body": "pdb.plug_in_icc_profile_apply(${1:image}, ${2:profile}, ${3:intent}, ${4:bpc})"
+    },
+  "drawable_fill": {
+      "prefix": "drawable_fill",
+      "body": "pdb.gimp_drawable_fill(${1:drawable}, ${2:fill_type})"
+    },
+  "gflare": {
+      "prefix": "gflare",
+      "body": "pdb.plug_in_gflare(${1:image}, ${2:drawable}, ${3:gflare_name}, ${4:xcenter}, ${5:ycenter}, ${6:radius}, ${7:rotation}, ${8:hue}, ${9:vangle}, ${10:vlength}, ${11:use_asupsample}, ${12:asupsample_max_depth}, ${13:asupsample_threshold})"
+    },
+  "drawable_edit_stroke_item": {
+      "prefix": "drawable_edit_stroke_item",
+      "body": "pdb.gimp_drawable_edit_stroke_item(${1:drawable}, ${2:item})"
+    },
+  "drawable_colorize_hsl": {
+      "prefix": "drawable_colorize_hsl",
+      "body": "pdb.gimp_drawable_colorize_hsl(${1:drawable}, ${2:hue}, ${3:saturation}, ${4:lightness})"
+    },
+  "item_set_expanded": {
+      "prefix": "item_set_expanded",
+      "body": "pdb.gimp_item_set_expanded(${1:item}, ${2:expanded})"
+    },
+  "palette_export_text": {
+      "prefix": "palette_export_text",
+      "body": "pdb.gimp_palette_export_text(${1:dirname}, ${2:string})"
+    },
+  "file_pdf_load_thumb": {
+      "prefix": "file_pdf_load_thumb",
+      "body": "pdb.file_pdf_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "file_raw_placeholder_qtk_load": {
+      "prefix": "file_raw_placeholder_qtk_load",
+      "body": "pdb.file_raw_placeholder_qtk_load(${1:filename}, ${2:raw_filename})"
+    },
+  "floating_sel_anchor": {
+      "prefix": "floating_sel_anchor",
+      "body": "pdb.gimp_floating_sel_anchor(${1:floating_sel})"
+    },
+  "channel_get_opacity": {
+      "prefix": "channel_get_opacity",
+      "body": "pdb.gimp_channel_get_opacity(${1:channel})"
+    },
+  "layer_get_opacity": {
+      "prefix": "layer_get_opacity",
+      "body": "pdb.gimp_layer_get_opacity(${1:layer})"
+    },
+  "unit_editor": {
+      "prefix": "unit_editor",
+      "body": "pdb.plug_in_unit_editor()"
+    },
+  "channel_get_color": {
+      "prefix": "channel_get_color",
+      "body": "pdb.gimp_channel_get_color(${1:channel})"
+    },
+  "image_set_active_channel": {
+      "prefix": "image_set_active_channel",
+      "body": "pdb.gimp_image_set_active_channel(${1:image}, ${2:active_channel})"
+    },
+  "airbrush_default": {
+      "prefix": "airbrush_default",
+      "body": "pdb.gimp_airbrush_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "context_set_defaults": {
+      "prefix": "context_set_defaults",
+      "body": "pdb.gimp_context_set_defaults()"
+    },
+  "file_pnm_load": {
+      "prefix": "file_pnm_load",
+      "body": "pdb.file_pnm_load(${1:filename}, ${2:raw_filename})"
+    },
+  "context_set_sample_transparent": {
+      "prefix": "context_set_sample_transparent",
+      "body": "pdb.gimp_context_set_sample_transparent(${1:sample_transparent})"
+    },
+  "procedural_db_proc_exists": {
+      "prefix": "procedural_db_proc_exists",
+      "body": "pdb.gimp_procedural_db_proc_exists(${1:procedure_name})"
+    },
+  "context_set_ink_speed_sensitivity": {
+      "prefix": "context_set_ink_speed_sensitivity",
+      "body": "pdb.gimp_context_set_ink_speed_sensitivity(${1:speed})"
+    },
+  "displays_flush": {
+      "prefix": "displays_flush",
+      "body": "pdb.gimp_displays_flush()"
+    },
+  "pagecurl": {
+      "prefix": "pagecurl",
+      "body": "pdb.plug_in_pagecurl(${1:image}, ${2:drawable}, ${3:colors}, ${4:edge}, ${5:orientation}, ${6:shade})"
+    },
+  "item_transform_scale": {
+      "prefix": "item_transform_scale",
+      "body": "pdb.gimp_item_transform_scale(${1:item}, ${2:x0}, ${3:y0}, ${4:x1}, ${5:y1})"
+    },
+  "item_get_color_tag": {
+      "prefix": "item_get_color_tag",
+      "body": "pdb.gimp_item_get_color_tag(${1:item})"
+    },
+  "file_pbm_save": {
+      "prefix": "file_pbm_save",
+      "body": "pdb.file_pbm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:raw})"
+    },
+  "online_wiki": {
+      "prefix": "online_wiki",
+      "body": "pdb.gimp_online_wiki()"
+    },
+  "context_set_gradient_fg_bg_rgb": {
+      "prefix": "context_set_gradient_fg_bg_rgb",
+      "body": "pdb.gimp_context_set_gradient_fg_bg_rgb()"
+    },
+  "get_default_unit": {
+      "prefix": "get_default_unit",
+      "body": "pdb.gimp_get_default_unit()"
+    },
+  "file_pgm_save": {
+      "prefix": "file_pgm_save",
+      "body": "pdb.file_pgm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:raw})"
+    },
+  "selection_flood": {
+      "prefix": "selection_flood",
+      "body": "pdb.gimp_selection_flood(${1:image})"
+    },
+  "layer_set_opacity": {
+      "prefix": "layer_set_opacity",
+      "body": "pdb.gimp_layer_set_opacity(${1:layer}, ${2:opacity})"
+    },
+  "channel_set_opacity": {
+      "prefix": "channel_set_opacity",
+      "body": "pdb.gimp_channel_set_opacity(${1:channel}, ${2:opacity})"
+    },
+  "image_convert_color_profile": {
+      "prefix": "image_convert_color_profile",
+      "body": "pdb.gimp_image_convert_color_profile(${1:image}, ${2:num_bytes}, ${3:color_profile}, ${4:intent}, ${5:bpc})"
+    },
+  "drawable_merge_shadow": {
+      "prefix": "drawable_merge_shadow",
+      "body": "pdb.gimp_drawable_merge_shadow(${1:drawable}, ${2:undo})"
+    },
+  "context_get_font": {
+      "prefix": "context_get_font",
+      "body": "pdb.gimp_context_get_font()"
+    },
+  "item_get_image": {
+      "prefix": "item_get_image",
+      "body": "pdb.gimp_item_get_image(${1:item})"
+    },
+  "guide_new_percent": {
+      "prefix": "guide_new_percent",
+      "body": "pdb.script_fu_guide_new_percent(${1:image}, ${2:drawable}, ${3:option}, ${4:value})"
+    },
+  "file_raw_placeholder_hasselblad_load": {
+      "prefix": "file_raw_placeholder_hasselblad_load",
+      "body": "pdb.file_raw_placeholder_hasselblad_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_new": {
+      "prefix": "image_new",
+      "body": "pdb.gimp_image_new(${1:width}, ${2:height}, ${3:type})"
+    },
+  "image_get_channel_by_name": {
+      "prefix": "image_get_channel_by_name",
+      "body": "pdb.gimp_image_get_channel_by_name(${1:image}, ${2:name})"
+    },
+  "edit_paste_as_new_image": {
+      "prefix": "edit_paste_as_new_image",
+      "body": "pdb.gimp_edit_paste_as_new_image()"
+    },
+  "item_set_name": {
+      "prefix": "item_set_name",
+      "body": "pdb.gimp_item_set_name(${1:item}, ${2:name})"
+    },
+  "file_xbm_save": {
+      "prefix": "file_xbm_save",
+      "body": "pdb.file_xbm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:comment}, ${6:x10}, ${7:x_hot}, ${8:y_hot}, ${9:prefix}, ${10:write_mask}, ${11:mask_extension})"
+    },
+  "circuit": {
+      "prefix": "circuit",
+      "body": "pdb.script_fu_circuit(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:toggle}, ${6:toggle}, ${7:toggle})"
+    },
+  "text_layer_set_justification": {
+      "prefix": "text_layer_set_justification",
+      "body": "pdb.gimp_text_layer_set_justification(${1:layer}, ${2:justify})"
+    },
+  "context_set_ink_size": {
+      "prefix": "context_set_ink_size",
+      "body": "pdb.gimp_context_set_ink_size(${1:size})"
+    },
+  "layer_get_composite_space": {
+      "prefix": "layer_get_composite_space",
+      "body": "pdb.gimp_layer_get_composite_space(${1:layer})"
+    },
+  "file_raw_placeholder_ari_load": {
+      "prefix": "file_raw_placeholder_ari_load",
+      "body": "pdb.file_raw_placeholder_ari_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_ps_load_setargs": {
+      "prefix": "file_ps_load_setargs",
+      "body": "pdb.file_ps_load_setargs(${1:resolution}, ${2:width}, ${3:height}, ${4:check_bbox}, ${5:pages}, ${6:coloring}, ${7:text_alpha_bits}, ${8:graphic_alpha_bits})"
+    },
+  "image_grid_get_offset": {
+      "prefix": "image_grid_get_offset",
+      "body": "pdb.gimp_image_grid_get_offset(${1:image})"
+    },
+  "file_dicom_load": {
+      "prefix": "file_dicom_load",
+      "body": "pdb.file_dicom_load(${1:filename}, ${2:raw_filename})"
+    },
+  "gradient_delete": {
+      "prefix": "gradient_delete",
+      "body": "pdb.gimp_gradient_delete(${1:name})"
+    },
+  "drawable_compose": {
+      "prefix": "drawable_compose",
+      "body": "pdb.plug_in_drawable_compose(${1:image1}, ${2:drawable1}, ${3:drawable2}, ${4:drawable3}, ${5:drawable4}, ${6:compose_type})"
+    },
+  "image_undo_thaw": {
+      "prefix": "image_undo_thaw",
+      "body": "pdb.gimp_image_undo_thaw(${1:image})"
+    },
+  "unit_get_singular": {
+      "prefix": "unit_get_singular",
+      "body": "pdb.gimp_unit_get_singular(${1:unit_id})"
+    },
+  "display_is_valid": {
+      "prefix": "display_is_valid",
+      "body": "pdb.gimp_display_is_valid(${1:display})"
+    },
+  "context_set_gradient_reverse": {
+      "prefix": "context_set_gradient_reverse",
+      "body": "pdb.gimp_context_set_gradient_reverse(${1:reverse})"
+    },
+  "edit_cut": {
+      "prefix": "edit_cut",
+      "body": "pdb.gimp_edit_cut(${1:drawable})"
+    },
+  "file_gbr_load": {
+      "prefix": "file_gbr_load",
+      "body": "pdb.file_gbr_load(${1:dummy_param}, ${2:uri}, ${3:raw_uri})"
+    },
+  "help": {
+      "prefix": "help",
+      "body": "pdb.gimp_help(${1:help_domain}, ${2:help_id})"
+    },
+  "curve_bend": {
+      "prefix": "curve_bend",
+      "body": "pdb.plug_in_curve_bend(${1:image}, ${2:drawable}, ${3:rotation}, ${4:smoothing}, ${5:antialias}, ${6:work_on_copy}, ${7:curve_type}, ${8:argc_upper_point_x}, ${9:upper_point_x}, ${10:argc_upper_point_y}, ${11:upper_point_y}, ${12:argc_lower_point_x}, ${13:lower_point_x}, ${14:argc_lower_point_y}, ${15:lower_point_y}, ${16:argc_upper_val_y}, ${17:upper_val_y}, ${18:argc_lower_val_y}, ${19:lower_val_y})"
+    },
+  "item_is_layer": {
+      "prefix": "item_is_layer",
+      "body": "pdb.gimp_item_is_layer(${1:item})"
+    },
+  "image_lower_item_to_bottom": {
+      "prefix": "image_lower_item_to_bottom",
+      "body": "pdb.gimp_image_lower_item_to_bottom(${1:image}, ${2:item})"
+    },
+  "layer_resize_to_image_size": {
+      "prefix": "layer_resize_to_image_size",
+      "body": "pdb.gimp_layer_resize_to_image_size(${1:layer})"
+    },
+  "file_webp_load": {
+      "prefix": "file_webp_load",
+      "body": "pdb.file_webp_load(${1:filename}, ${2:raw_filename})"
+    },
+  "item_transform_flip_simple": {
+      "prefix": "item_transform_flip_simple",
+      "body": "pdb.gimp_item_transform_flip_simple(${1:item}, ${2:flip_type}, ${3:auto_center}, ${4:axis})"
+    },
+  "gimpressionist": {
+      "prefix": "gimpressionist",
+      "body": "pdb.plug_in_gimpressionist(${1:image}, ${2:drawable}, ${3:preset})"
+    },
+  "palette_get_info": {
+      "prefix": "palette_get_info",
+      "body": "pdb.gimp_palette_get_info(${1:name})"
+    },
+  "palette_to_gradient": {
+      "prefix": "palette_to_gradient",
+      "body": "pdb.python_fu_palette_to_gradient(${1:palette})"
+    },
+  "context_get_ink_size": {
+      "prefix": "context_get_ink_size",
+      "body": "pdb.gimp_context_get_ink_size()"
+    },
+  "image_flip": {
+      "prefix": "image_flip",
+      "body": "pdb.gimp_image_flip(${1:image}, ${2:flip_type})"
+    },
+  "reverse_layers": {
+      "prefix": "reverse_layers",
+      "body": "pdb.script_fu_reverse_layers(${1:image}, ${2:drawable})"
+    },
+  "drawable_equalize": {
+      "prefix": "drawable_equalize",
+      "body": "pdb.gimp_drawable_equalize(${1:drawable}, ${2:mask_only})"
+    },
+  "image_floating_sel_attached_to": {
+      "prefix": "image_floating_sel_attached_to",
+      "body": "pdb.gimp_image_floating_sel_attached_to(${1:image})"
+    },
+  "palettes_close_popup": {
+      "prefix": "palettes_close_popup",
+      "body": "pdb.gimp_palettes_close_popup(${1:palette_callback})"
+    },
+  "context_set_gradient_fg_bg_hsv_ccw": {
+      "prefix": "context_set_gradient_fg_bg_hsv_ccw",
+      "body": "pdb.gimp_context_set_gradient_fg_bg_hsv_ccw()"
+    },
+  "lic": {
+      "prefix": "lic",
+      "body": "pdb.plug_in_lic(${1:image}, ${2:drawable})"
+    },
+  "add_bevel": {
+      "prefix": "add_bevel",
+      "body": "pdb.script_fu_add_bevel(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle}, ${5:toggle})"
+    },
+  "context_set_transform_direction": {
+      "prefix": "context_set_transform_direction",
+      "body": "pdb.gimp_context_set_transform_direction(${1:transform_direction})"
+    },
+  "weave": {
+      "prefix": "weave",
+      "body": "pdb.script_fu_weave(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:value}, ${7:value}, ${8:value}, ${9:value})"
+    },
+  "heal": {
+      "prefix": "heal",
+      "body": "pdb.gimp_heal(${1:drawable}, ${2:src_drawable}, ${3:src_x}, ${4:src_y}, ${5:num_strokes}, ${6:strokes})"
+    },
+  "context_get_sample_threshold": {
+      "prefix": "context_get_sample_threshold",
+      "body": "pdb.gimp_context_get_sample_threshold()"
+    },
+  "vectors_get_strokes": {
+      "prefix": "vectors_get_strokes",
+      "body": "pdb.gimp_vectors_get_strokes(${1:vectors})"
+    },
+  "gauss": {
+      "prefix": "gauss",
+      "body": "pdb.plug_in_gauss(${1:image}, ${2:drawable}, ${3:horizontal}, ${4:vertical}, ${5:method})"
+    },
+  "image_is_dirty": {
+      "prefix": "image_is_dirty",
+      "body": "pdb.gimp_image_is_dirty(${1:image})"
+    },
+  "selection_border": {
+      "prefix": "selection_border",
+      "body": "pdb.gimp_selection_border(${1:image}, ${2:radius})"
+    },
+  "lens_distortion": {
+      "prefix": "lens_distortion",
+      "body": "pdb.plug_in_lens_distortion(${1:image}, ${2:drawable}, ${3:offset_x}, ${4:offset_y}, ${5:main_adjust}, ${6:edge_adjust}, ${7:rescale}, ${8:brighten})"
+    },
+  "warp": {
+      "prefix": "warp",
+      "body": "pdb.plug_in_warp(${1:image}, ${2:drawable}, ${3:amount}, ${4:warp_map}, ${5:iter}, ${6:dither}, ${7:angle}, ${8:wrap_type}, ${9:mag_map}, ${10:mag_use}, ${11:substeps}, ${12:grad_map}, ${13:grad_scale}, ${14:vector_map}, ${15:vector_scale}, ${16:vector_angle})"
+    },
+  "image_undo_enable": {
+      "prefix": "image_undo_enable",
+      "body": "pdb.gimp_image_undo_enable(${1:image})"
+    },
+  "context_get_sample_merged": {
+      "prefix": "context_get_sample_merged",
+      "body": "pdb.gimp_context_get_sample_merged()"
+    },
+  "buffer_get_image_type": {
+      "prefix": "buffer_get_image_type",
+      "body": "pdb.gimp_buffer_get_image_type(${1:buffer_name})"
+    },
+  "item_delete": {
+      "prefix": "item_delete",
+      "body": "pdb.gimp_item_delete(${1:item})"
+    },
+  "paste_as_pattern": {
+      "prefix": "paste_as_pattern",
+      "body": "pdb.script_fu_paste_as_pattern(${1:string}, ${2:string})"
+    },
+  "context_get_ink_blob_type": {
+      "prefix": "context_get_ink_blob_type",
+      "body": "pdb.gimp_context_get_ink_blob_type()"
+    },
+  "channel_set_color": {
+      "prefix": "channel_set_color",
+      "body": "pdb.gimp_channel_set_color(${1:channel}, ${2:color})"
+    },
+  "emboss": {
+      "prefix": "emboss",
+      "body": "pdb.plug_in_emboss(${1:image}, ${2:drawable}, ${3:azimuth}, ${4:elevation}, ${5:depth}, ${6:emboss})"
+    },
+  "gradient_segment_range_split_midpoint": {
+      "prefix": "gradient_segment_range_split_midpoint",
+      "body": "pdb.gimp_gradient_segment_range_split_midpoint(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "dbbrowser": {
+      "prefix": "dbbrowser",
+      "body": "pdb.plug_in_dbbrowser()"
+    },
+  "drawable_posterize": {
+      "prefix": "drawable_posterize",
+      "body": "pdb.gimp_drawable_posterize(${1:drawable}, ${2:levels})"
+    },
+  "image_get_tattoo_state": {
+      "prefix": "image_get_tattoo_state",
+      "body": "pdb.gimp_image_get_tattoo_state(${1:image})"
+    },
+  "file_gif_load_thumb": {
+      "prefix": "file_gif_load_thumb",
+      "body": "pdb.file_gif_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "image_merge_down": {
+      "prefix": "image_merge_down",
+      "body": "pdb.gimp_image_merge_down(${1:image}, ${2:merge_layer}, ${3:merge_type})"
+    },
+  "procedural_db_get_data": {
+      "prefix": "procedural_db_get_data",
+      "body": "pdb.gimp_procedural_db_get_data(${1:identifier})"
+    },
+  "gradient_rename": {
+      "prefix": "gradient_rename",
+      "body": "pdb.gimp_gradient_rename(${1:name}, ${2:new_name})"
+    },
+  "oilify": {
+      "prefix": "oilify",
+      "body": "pdb.plug_in_oilify(${1:image}, ${2:drawable}, ${3:mask_size}, ${4:mode})"
+    },
+  "c_astretch": {
+      "prefix": "c_astretch",
+      "body": "pdb.plug_in_c_astretch(${1:image}, ${2:drawable})"
+    },
+  "dynamics_get_list": {
+      "prefix": "dynamics_get_list",
+      "body": "pdb.gimp_dynamics_get_list(${1:filter})"
+    },
+  "pattern_get_pixels": {
+      "prefix": "pattern_get_pixels",
+      "body": "pdb.gimp_pattern_get_pixels(${1:name})"
+    },
+  "file_eps_save": {
+      "prefix": "file_eps_save",
+      "body": "pdb.file_eps_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:width}, ${6:height}, ${7:x_offset}, ${8:y_offset}, ${9:unit}, ${10:keep_ratio}, ${11:rotation}, ${12:eps_flag}, ${13:preview}, ${14:level})"
+    },
+  "file_raw_set_defaults": {
+      "prefix": "file_raw_set_defaults",
+      "body": "pdb.file_raw_set_defaults(${1:image_type}, ${2:palette_type})"
+    },
+  "smudge_default": {
+      "prefix": "smudge_default",
+      "body": "pdb.gimp_smudge_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "image_set_active_layer": {
+      "prefix": "image_set_active_layer",
+      "body": "pdb.gimp_image_set_active_layer(${1:image}, ${2:active_layer})"
+    },
+  "gauss_rle2": {
+      "prefix": "gauss_rle2",
+      "body": "pdb.plug_in_gauss_rle2(${1:image}, ${2:drawable}, ${3:horizontal}, ${4:vertical})"
+    },
+  "make_brush_rectangular_feathered": {
+      "prefix": "make_brush_rectangular_feathered",
+      "body": "pdb.script_fu_make_brush_rectangular_feathered(${1:string}, ${2:value}, ${3:value}, ${4:value}, ${5:value})"
+    },
+  "nova": {
+      "prefix": "nova",
+      "body": "pdb.plug_in_nova(${1:image}, ${2:drawable}, ${3:xcenter}, ${4:ycenter}, ${5:color}, ${6:radius}, ${7:nspoke}, ${8:randomhue})"
+    },
+  "brush_get_pixels": {
+      "prefix": "brush_get_pixels",
+      "body": "pdb.gimp_brush_get_pixels(${1:name})"
+    },
+  "eraser_default": {
+      "prefix": "eraser_default",
+      "body": "pdb.gimp_eraser_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "layer_create_mask": {
+      "prefix": "layer_create_mask",
+      "body": "pdb.gimp_layer_create_mask(${1:layer}, ${2:mask_type})"
+    },
+  "pattern_get_info": {
+      "prefix": "pattern_get_info",
+      "body": "pdb.gimp_pattern_get_info(${1:name})"
+    },
+  "context_set_default_colors": {
+      "prefix": "context_set_default_colors",
+      "body": "pdb.gimp_context_set_default_colors()"
+    },
+  "help_concepts_usage": {
+      "prefix": "help_concepts_usage",
+      "body": "pdb.gimp_help_concepts_usage()"
+    },
+  "brush_is_editable": {
+      "prefix": "brush_is_editable",
+      "body": "pdb.gimp_brush_is_editable(${1:name})"
+    },
+  "edit_named_copy_visible": {
+      "prefix": "edit_named_copy_visible",
+      "body": "pdb.gimp_edit_named_copy_visible(${1:image}, ${2:buffer_name})"
+    },
+  "layer_scale": {
+      "prefix": "layer_scale",
+      "body": "pdb.gimp_layer_scale(${1:layer}, ${2:new_width}, ${3:new_height}, ${4:local_origin})"
+    },
+  "context_set_ink_size_sensitivity": {
+      "prefix": "context_set_ink_size_sensitivity",
+      "body": "pdb.gimp_context_set_ink_size_sensitivity(${1:size})"
+    },
+  "gradient_segment_range_blend_opacity": {
+      "prefix": "gradient_segment_range_blend_opacity",
+      "body": "pdb.gimp_gradient_segment_range_blend_opacity(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "file_colorxhtml_save": {
+      "prefix": "file_colorxhtml_save",
+      "body": "pdb.file_colorxhtml_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:source}, ${6:characters}, ${7:font_size}, ${8:separate})"
+    },
+  "context_set_brush_force": {
+      "prefix": "context_set_brush_force",
+      "body": "pdb.gimp_context_set_brush_force(${1:force})"
+    },
+  "unsharp_mask": {
+      "prefix": "unsharp_mask",
+      "body": "pdb.script_fu_unsharp_mask(${1:image}, ${2:drawable}, ${3:value}, ${4:value})"
+    },
+  "animationoptimize": {
+      "prefix": "animationoptimize",
+      "body": "pdb.plug_in_animationoptimize(${1:image}, ${2:drawable})"
+    },
+  "image_convert_precision": {
+      "prefix": "image_convert_precision",
+      "body": "pdb.gimp_image_convert_precision(${1:image}, ${2:precision})"
+    },
+  "layer_get_blend_space": {
+      "prefix": "layer_get_blend_space",
+      "body": "pdb.gimp_layer_get_blend_space(${1:layer})"
+    },
+  "drawable_edit_fill": {
+      "prefix": "drawable_edit_fill",
+      "body": "pdb.gimp_drawable_edit_fill(${1:drawable}, ${2:fill_type})"
+    },
+  "video": {
+      "prefix": "video",
+      "body": "pdb.plug_in_video(${1:image}, ${2:drawable}, ${3:pattern_number}, ${4:additive}, ${5:rotated})"
+    },
+  "file_raw_placeholder_kodak_load": {
+      "prefix": "file_raw_placeholder_kodak_load",
+      "body": "pdb.file_raw_placeholder_kodak_load(${1:filename}, ${2:raw_filename})"
+    },
+  "brushes_refresh": {
+      "prefix": "brushes_refresh",
+      "body": "pdb.gimp_brushes_refresh()"
+    },
+  "context_set_feather": {
+      "prefix": "context_set_feather",
+      "body": "pdb.gimp_context_set_feather(${1:feather})"
+    },
+  "grid_system": {
+      "prefix": "grid_system",
+      "body": "pdb.script_fu_grid_system(${1:image}, ${2:drawable}, ${3:value}, ${4:value})"
+    },
+  "edit_named_copy": {
+      "prefix": "edit_named_copy",
+      "body": "pdb.gimp_edit_named_copy(${1:drawable}, ${2:buffer_name})"
+    },
+  "context_set_background": {
+      "prefix": "context_set_background",
+      "body": "pdb.gimp_context_set_background(${1:background})"
+    },
+  "buffer_rename": {
+      "prefix": "buffer_rename",
+      "body": "pdb.gimp_buffer_rename(${1:buffer_name}, ${2:new_name})"
+    },
+  "image_insert_vectors": {
+      "prefix": "image_insert_vectors",
+      "body": "pdb.gimp_image_insert_vectors(${1:image}, ${2:vectors}, ${3:parent}, ${4:position})"
+    },
+  "vectors_stroke_new_from_points": {
+      "prefix": "vectors_stroke_new_from_points",
+      "body": "pdb.gimp_vectors_stroke_new_from_points(${1:vectors}, ${2:type}, ${3:num_points}, ${4:controlpoints}, ${5:closed})"
+    },
+  "file_save": {
+      "prefix": "file_save",
+      "body": "pdb.gimp_file_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "drawable_offsets": {
+      "prefix": "drawable_offsets",
+      "body": "pdb.gimp_drawable_offsets(${1:drawable})"
+    },
+  "file_j2k_load": {
+      "prefix": "file_j2k_load",
+      "body": "pdb.file_j2k_load(${1:filename}, ${2:raw_filename}, ${3:colorspace})"
+    },
+  "gradient_segment_range_set_coloring_type": {
+      "prefix": "gradient_segment_range_set_coloring_type",
+      "body": "pdb.gimp_gradient_segment_range_set_coloring_type(${1:name}, ${2:start_segment}, ${3:end_segment}, ${4:coloring_type})"
+    },
+  "context_get_stroke_method": {
+      "prefix": "context_get_stroke_method",
+      "body": "pdb.gimp_context_get_stroke_method()"
+    },
+  "clone": {
+      "prefix": "clone",
+      "body": "pdb.gimp_clone(${1:drawable}, ${2:src_drawable}, ${3:clone_type}, ${4:src_x}, ${5:src_y}, ${6:num_strokes}, ${7:strokes})"
+    },
+  "alienmap2": {
+      "prefix": "alienmap2",
+      "body": "pdb.plug_in_alienmap2(${1:image}, ${2:drawable}, ${3:redfrequency}, ${4:redangle}, ${5:greenfrequency}, ${6:greenangle}, ${7:bluefrequency}, ${8:blueangle}, ${9:colormodel}, ${10:redmode}, ${11:greenmode}, ${12:bluemode})"
+    },
+  "file_raw_get_defaults": {
+      "prefix": "file_raw_get_defaults",
+      "body": "pdb.file_raw_get_defaults()"
+    },
+  "gradient_segment_range_split_uniform": {
+      "prefix": "gradient_segment_range_split_uniform",
+      "body": "pdb.gimp_gradient_segment_range_split_uniform(${1:name}, ${2:start_segment}, ${3:end_segment}, ${4:split_parts})"
+    },
+  "drawable_curves_explicit": {
+      "prefix": "drawable_curves_explicit",
+      "body": "pdb.gimp_drawable_curves_explicit(${1:drawable}, ${2:channel}, ${3:num_values}, ${4:values})"
+    },
+  "context_set_distance_metric": {
+      "prefix": "context_set_distance_metric",
+      "body": "pdb.gimp_context_set_distance_metric(${1:metric})"
+    },
+  "mosaic": {
+      "prefix": "mosaic",
+      "body": "pdb.plug_in_mosaic(${1:image}, ${2:drawable}, ${3:tile_size}, ${4:tile_height}, ${5:tile_spacing}, ${6:tile_neatness}, ${7:tile_allow_split}, ${8:light_dir}, ${9:color_variation}, ${10:antialiasing}, ${11:color_averaging}, ${12:tile_type}, ${13:tile_surface}, ${14:grout_color})"
+    },
+  "online_roadmap": {
+      "prefix": "online_roadmap",
+      "body": "pdb.gimp_online_roadmap()"
+    },
+  "spyrogimp": {
+      "prefix": "spyrogimp",
+      "body": "pdb.plug_in_spyrogimp(${1:image}, ${2:drawable}, ${3:curve_type}, ${4:shape}, ${5:sides}, ${6:morph}, ${7:fixed_teeth}, ${8:moving_teeth}, ${9:hole_percent}, ${10:margin}, ${11:equal_w_h}, ${12:pattern_rotation}, ${13:shape_rotation}, ${14:tool}, ${15:long_gradient})"
+    },
+  "drawable_color_balance": {
+      "prefix": "drawable_color_balance",
+      "body": "pdb.gimp_drawable_color_balance(${1:drawable}, ${2:transfer_mode}, ${3:preserve_lum}, ${4:cyan_red}, ${5:magenta_green}, ${6:yellow_blue})"
+    },
+  "screenshot": {
+      "prefix": "screenshot",
+      "body": "pdb.plug_in_screenshot(${1:shoot_type}, ${2:window_id}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})"
+    },
+  "item_get_lock_position": {
+      "prefix": "item_get_lock_position",
+      "body": "pdb.gimp_item_get_lock_position(${1:item})"
+    },
+  "xcf_save": {
+      "prefix": "xcf_save",
+      "body": "pdb.gimp_xcf_save(${1:dummy_param}, ${2:image}, ${3:drawable}, ${4:filename}, ${5:raw_filename})"
+    },
+  "file_raw_placeholder_rwl_load": {
+      "prefix": "file_raw_placeholder_rwl_load",
+      "body": "pdb.file_raw_placeholder_rwl_load(${1:filename}, ${2:raw_filename})"
+    },
+  "round_corners": {
+      "prefix": "round_corners",
+      "body": "pdb.script_fu_round_corners(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle}, ${5:value}, ${6:value}, ${7:value}, ${8:toggle}, ${9:toggle})"
+    },
+  "file_mng_save": {
+      "prefix": "file_mng_save",
+      "body": "pdb.file_mng_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:interlace}, ${6:compression}, ${7:quality}, ${8:smoothing}, ${9:loop}, ${10:default_delay}, ${11:default_chunks}, ${12:default_dispose}, ${13:bkgd}, ${14:gama}, ${15:phys}, ${16:time})"
+    },
+  "gradient_segment_get_coloring_type": {
+      "prefix": "gradient_segment_get_coloring_type",
+      "body": "pdb.gimp_gradient_segment_get_coloring_type(${1:name}, ${2:segment})"
+    },
+  "file_wmf_load_thumb": {
+      "prefix": "file_wmf_load_thumb",
+      "body": "pdb.file_wmf_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "busy_dialog": {
+      "prefix": "busy_dialog",
+      "body": "pdb.plug_in_busy_dialog(${1:read_fd}, ${2:write_fd}, ${3:message}, ${4:cancelable})"
+    },
+  "image_get_xcf_uri": {
+      "prefix": "image_get_xcf_uri",
+      "body": "pdb.gimp_image_get_xcf_uri(${1:image})"
+    },
+  "register_file_handler_priority": {
+      "prefix": "register_file_handler_priority",
+      "body": "pdb.gimp_register_file_handler_priority(${1:procedure_name}, ${2:priority})"
+    },
+  "gradients_get_list": {
+      "prefix": "gradients_get_list",
+      "body": "pdb.gimp_gradients_get_list(${1:filter})"
+    },
+  "eval": {
+      "prefix": "eval",
+      "body": "pdb.plug_in_script_fu_eval(${1:code})"
+    },
+  "drawable_free_shadow": {
+      "prefix": "drawable_free_shadow",
+      "body": "pdb.gimp_drawable_free_shadow(${1:drawable})"
+    },
+  "drawable_offset": {
+      "prefix": "drawable_offset",
+      "body": "pdb.gimp_drawable_offset(${1:drawable}, ${2:wrap_around}, ${3:fill_type}, ${4:offset_x}, ${5:offset_y})"
+    },
+  "metadata_editor": {
+      "prefix": "metadata_editor",
+      "body": "pdb.plug_in_metadata_editor(${1:image})"
+    },
+  "gradients_popup": {
+      "prefix": "gradients_popup",
+      "body": "pdb.gimp_gradients_popup(${1:gradient_callback}, ${2:popup_title}, ${3:initial_gradient}, ${4:sample_size})"
+    },
+  "floating_sel_to_layer": {
+      "prefix": "floating_sel_to_layer",
+      "body": "pdb.gimp_floating_sel_to_layer(${1:floating_sel})"
+    },
+  "sparkle": {
+      "prefix": "sparkle",
+      "body": "pdb.plug_in_sparkle(${1:image}, ${2:drawable}, ${3:lum_threshold}, ${4:flare_inten}, ${5:spike_len}, ${6:spike_pts}, ${7:spike_angle}, ${8:density}, ${9:transparency}, ${10:random_hue}, ${11:random_saturation}, ${12:preserve_luminosity}, ${13:inverse}, ${14:border}, ${15:color_type})"
+    },
+  "image_set_component_visible": {
+      "prefix": "image_set_component_visible",
+      "body": "pdb.gimp_image_set_component_visible(${1:image}, ${2:component}, ${3:visible})"
+    },
+  "image_rotate": {
+      "prefix": "image_rotate",
+      "body": "pdb.gimp_image_rotate(${1:image}, ${2:rotate_type})"
+    },
+  "help_using_selections": {
+      "prefix": "help_using_selections",
+      "body": "pdb.gimp_help_using_selections()"
+    },
+  "drawable_curves_spline": {
+      "prefix": "drawable_curves_spline",
+      "body": "pdb.gimp_drawable_curves_spline(${1:drawable}, ${2:channel}, ${3:num_points}, ${4:points})"
+    },
+  "film": {
+      "prefix": "film",
+      "body": "pdb.plug_in_film(${1:image}, ${2:drawable}, ${3:film_height}, ${4:film_color}, ${5:number_start}, ${6:number_font}, ${7:number_color}, ${8:at_top}, ${9:at_bottom}, ${10:num_images}, ${11:image_ids})"
+    },
+  "guide_new": {
+      "prefix": "guide_new",
+      "body": "pdb.script_fu_guide_new(${1:image}, ${2:drawable}, ${3:option}, ${4:value})"
+    },
+  "context_set_line_dash_offset": {
+      "prefix": "context_set_line_dash_offset",
+      "body": "pdb.gimp_context_set_line_dash_offset(${1:dash_offset})"
+    },
+  "context_set_line_width_unit": {
+      "prefix": "context_set_line_width_unit",
+      "body": "pdb.gimp_context_set_line_width_unit(${1:line_width_unit})"
+    },
+  "brush_get_shape": {
+      "prefix": "brush_get_shape",
+      "body": "pdb.gimp_brush_get_shape(${1:name})"
+    },
+  "layer_add_alpha": {
+      "prefix": "layer_add_alpha",
+      "body": "pdb.gimp_layer_add_alpha(${1:layer})"
+    },
+  "file_exr_save": {
+      "prefix": "file_exr_save",
+      "body": "pdb.file_exr_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "gradient_segment_range_redistribute_handles": {
+      "prefix": "gradient_segment_range_redistribute_handles",
+      "body": "pdb.gimp_gradient_segment_range_redistribute_handles(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "dog": {
+      "prefix": "dog",
+      "body": "pdb.plug_in_dog(${1:image}, ${2:drawable}, ${3:inner}, ${4:outer}, ${5:normalize}, ${6:invert})"
+    },
+  "context_set_ink_blob_angle": {
+      "prefix": "context_set_ink_blob_angle",
+      "body": "pdb.gimp_context_set_ink_blob_angle(${1:angle})"
+    },
+  "palettes_refresh": {
+      "prefix": "palettes_refresh",
+      "body": "pdb.gimp_palettes_refresh()"
+    },
+  "context_set_brush_default_size": {
+      "prefix": "context_set_brush_default_size",
+      "body": "pdb.gimp_context_set_brush_default_size()"
+    },
+  "sobel": {
+      "prefix": "sobel",
+      "body": "pdb.plug_in_sobel(${1:image}, ${2:drawable}, ${3:horizontal}, ${4:vertical}, ${5:keep_sign})"
+    },
+  "vectors_bezier_stroke_new_moveto": {
+      "prefix": "vectors_bezier_stroke_new_moveto",
+      "body": "pdb.gimp_vectors_bezier_stroke_new_moveto(${1:vectors}, ${2:x0}, ${3:y0})"
+    },
+  "text_layer_get_line_spacing": {
+      "prefix": "text_layer_get_line_spacing",
+      "body": "pdb.gimp_text_layer_get_line_spacing(${1:layer})"
+    },
+  "fonts_get_list": {
+      "prefix": "fonts_get_list",
+      "body": "pdb.gimp_fonts_get_list(${1:filter})"
+    },
+  "bump_map": {
+      "prefix": "bump_map",
+      "body": "pdb.plug_in_bump_map(${1:image}, ${2:drawable}, ${3:bumpmap}, ${4:azimuth}, ${5:elevation}, ${6:depth}, ${7:xofs}, ${8:yofs}, ${9:waterlevel}, ${10:ambient}, ${11:compensate}, ${12:invert}, ${13:type})"
+    },
+  "context_get_distance_metric": {
+      "prefix": "context_get_distance_metric",
+      "body": "pdb.gimp_context_get_distance_metric()"
+    },
+  "get_monitor_resolution": {
+      "prefix": "get_monitor_resolution",
+      "body": "pdb.gimp_get_monitor_resolution()"
+    },
+  "image_grid_get_style": {
+      "prefix": "image_grid_get_style",
+      "body": "pdb.gimp_image_grid_get_style(${1:image})"
+    },
+  "unit_set_deletion_flag": {
+      "prefix": "unit_set_deletion_flag",
+      "body": "pdb.gimp_unit_set_deletion_flag(${1:unit_id}, ${2:deletion_flag})"
+    },
+  "engrave": {
+      "prefix": "engrave",
+      "body": "pdb.plug_in_engrave(${1:image}, ${2:drawable}, ${3:height}, ${4:limit})"
+    },
+  "context_set_brush_angle": {
+      "prefix": "context_set_brush_angle",
+      "body": "pdb.gimp_context_set_brush_angle(${1:angle})"
+    },
+  "old_photo": {
+      "prefix": "old_photo",
+      "body": "pdb.script_fu_old_photo(${1:image}, ${2:drawable}, ${3:toggle}, ${4:value}, ${5:toggle}, ${6:toggle}, ${7:toggle})"
+    },
+  "file_svg_load": {
+      "prefix": "file_svg_load",
+      "body": "pdb.file_svg_load(${1:filename}, ${2:raw_filename}, ${3:resolution}, ${4:width}, ${5:height}, ${6:paths})"
+    },
+  "file_xwd_load": {
+      "prefix": "file_xwd_load",
+      "body": "pdb.file_xwd_load(${1:filename}, ${2:raw_filename})"
+    },
+  "gradient_segment_get_middle_pos": {
+      "prefix": "gradient_segment_get_middle_pos",
+      "body": "pdb.gimp_gradient_segment_get_middle_pos(${1:name}, ${2:segment})"
+    },
+  "palette_export_css": {
+      "prefix": "palette_export_css",
+      "body": "pdb.gimp_palette_export_css(${1:dirname}, ${2:string})"
+    },
+  "neon": {
+      "prefix": "neon",
+      "body": "pdb.plug_in_neon(${1:image}, ${2:drawable}, ${3:radius}, ${4:amount})"
+    },
+  "file_pdf_save2": {
+      "prefix": "file_pdf_save2",
+      "body": "pdb.file_pdf_save2(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:vectorize}, ${6:ignore_hidden}, ${7:apply_masks}, ${8:layers_as_pages}, ${9:reverse_order})"
+    },
+  "paste_as_brush": {
+      "prefix": "paste_as_brush",
+      "body": "pdb.script_fu_paste_as_brush(${1:string}, ${2:string}, ${3:value})"
+    },
+  "file_sunras_save": {
+      "prefix": "file_sunras_save",
+      "body": "pdb.file_sunras_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:rle})"
+    },
+  "file_raw_placeholder_pxn_load": {
+      "prefix": "file_raw_placeholder_pxn_load",
+      "body": "pdb.file_raw_placeholder_pxn_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_remove_layer": {
+      "prefix": "image_remove_layer",
+      "body": "pdb.gimp_image_remove_layer(${1:image}, ${2:layer})"
+    },
+  "plugin_precision_enabled": {
+      "prefix": "plugin_precision_enabled",
+      "body": "pdb.gimp_plugin_precision_enabled()"
+    },
+  "vectors_stroke_flip_free": {
+      "prefix": "vectors_stroke_flip_free",
+      "body": "pdb.gimp_vectors_stroke_flip_free(${1:vectors}, ${2:stroke_id}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2})"
+    },
+  "context_set_line_join_style": {
+      "prefix": "context_set_line_join_style",
+      "body": "pdb.gimp_context_set_line_join_style(${1:join_style})"
+    },
+  "set_cmap": {
+      "prefix": "set_cmap",
+      "body": "pdb.script_fu_set_cmap(${1:image}, ${2:drawable}, ${3:palette})"
+    },
+  "context_set_brush_size": {
+      "prefix": "context_set_brush_size",
+      "body": "pdb.gimp_context_set_brush_size(${1:size})"
+    },
+  "gradients_set_popup": {
+      "prefix": "gradients_set_popup",
+      "body": "pdb.gimp_gradients_set_popup(${1:gradient_callback}, ${2:gradient_name})"
+    },
+  "palette_entry_get_name": {
+      "prefix": "palette_entry_get_name",
+      "body": "pdb.gimp_palette_entry_get_name(${1:name}, ${2:entry_num})"
+    },
+  "drawable_type_with_alpha": {
+      "prefix": "drawable_type_with_alpha",
+      "body": "pdb.gimp_drawable_type_with_alpha(${1:drawable})"
+    },
+  "sel_gauss": {
+      "prefix": "sel_gauss",
+      "body": "pdb.plug_in_sel_gauss(${1:image}, ${2:drawable}, ${3:radius}, ${4:max_delta})"
+    },
+  "file_cel_save": {
+      "prefix": "file_cel_save",
+      "body": "pdb.file_cel_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:palette_filename})"
+    },
+  "flarefx": {
+      "prefix": "flarefx",
+      "body": "pdb.plug_in_flarefx(${1:image}, ${2:drawable}, ${3:pos_x}, ${4:pos_y})"
+    },
+  "file_pdf_load2": {
+      "prefix": "file_pdf_load2",
+      "body": "pdb.file_pdf_load2(${1:filename}, ${2:raw_filename}, ${3:pdf_password}, ${4:n_pages}, ${5:pages})"
+    },
+  "file_ico_load_thumb": {
+      "prefix": "file_ico_load_thumb",
+      "body": "pdb.file_ico_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "gradient_segment_get_right_pos": {
+      "prefix": "gradient_segment_get_right_pos",
+      "body": "pdb.gimp_gradient_segment_get_right_pos(${1:name}, ${2:segment})"
+    },
+  "paintbrush_default": {
+      "prefix": "paintbrush_default",
+      "body": "pdb.gimp_paintbrush_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "waves_anim": {
+      "prefix": "waves_anim",
+      "body": "pdb.script_fu_waves_anim(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:toggle})"
+    },
+  "drawable_is_gray": {
+      "prefix": "drawable_is_gray",
+      "body": "pdb.gimp_drawable_is_gray(${1:drawable})"
+    },
+  "text_get_extents_fontname": {
+      "prefix": "text_get_extents_fontname",
+      "body": "pdb.gimp_text_get_extents_fontname(${1:text}, ${2:size}, ${3:size_type}, ${4:fontname})"
+    },
+  "drawable_get_thumbnail_format": {
+      "prefix": "drawable_get_thumbnail_format",
+      "body": "pdb.gimp_drawable_get_thumbnail_format(${1:drawable})"
+    },
+  "photocopy": {
+      "prefix": "photocopy",
+      "body": "pdb.plug_in_photocopy(${1:image}, ${2:drawable}, ${3:mask_radius}, ${4:sharpness}, ${5:pct_black}, ${6:pct_white})"
+    },
+  "vectors_import_from_string": {
+      "prefix": "vectors_import_from_string",
+      "body": "pdb.gimp_vectors_import_from_string(${1:image}, ${2:string}, ${3:length}, ${4:merge}, ${5:scale})"
+    },
+  "unit_new": {
+      "prefix": "unit_new",
+      "body": "pdb.gimp_unit_new(${1:identifier}, ${2:factor}, ${3:digits}, ${4:symbol}, ${5:abbreviation}, ${6:singular}, ${7:plural})"
+    },
+  "context_set_gradient_repeat_mode": {
+      "prefix": "context_set_gradient_repeat_mode",
+      "body": "pdb.gimp_context_set_gradient_repeat_mode(${1:repeat_mode})"
+    },
+  "procedural_db_proc_val": {
+      "prefix": "procedural_db_proc_val",
+      "body": "pdb.gimp_procedural_db_proc_val(${1:procedure_name}, ${2:val_num})"
+    },
+  "palettes_get_list": {
+      "prefix": "palettes_get_list",
+      "body": "pdb.gimp_palettes_get_list(${1:filter})"
+    },
+  "file_ico_save": {
+      "prefix": "file_ico_save",
+      "body": "pdb.file_ico_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "gradmap": {
+      "prefix": "gradmap",
+      "body": "pdb.plug_in_gradmap(${1:image}, ${2:drawable})"
+    },
+  "file_tga_load": {
+      "prefix": "file_tga_load",
+      "body": "pdb.file_tga_load(${1:filename}, ${2:raw_filename})"
+    },
+  "gimprc_set": {
+      "prefix": "gimprc_set",
+      "body": "pdb.gimp_gimprc_set(${1:token}, ${2:value})"
+    },
+  "selection_to_brush": {
+      "prefix": "selection_to_brush",
+      "body": "pdb.script_fu_selection_to_brush(${1:image}, ${2:drawable}, ${3:string}, ${4:string}, ${5:value})"
+    },
+  "layer_get_mask": {
+      "prefix": "layer_get_mask",
+      "body": "pdb.gimp_layer_get_mask(${1:layer})"
+    },
+  "brush_set_hardness": {
+      "prefix": "brush_set_hardness",
+      "body": "pdb.gimp_brush_set_hardness(${1:name}, ${2:hardness_in})"
+    },
+  "patterns_refresh": {
+      "prefix": "patterns_refresh",
+      "body": "pdb.gimp_patterns_refresh()"
+    },
+  "context_set_ink_blob_type": {
+      "prefix": "context_set_ink_blob_type",
+      "body": "pdb.gimp_context_set_ink_blob_type(${1:type})"
+    },
+  "context_set_font": {
+      "prefix": "context_set_font",
+      "body": "pdb.gimp_context_set_font(${1:name})"
+    },
+  "image_set_resolution": {
+      "prefix": "image_set_resolution",
+      "body": "pdb.gimp_image_set_resolution(${1:image}, ${2:xresolution}, ${3:yresolution})"
+    },
+  "file_gih_save": {
+      "prefix": "file_gih_save",
+      "body": "pdb.file_gih_save(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:spacing}, ${6:description}, ${7:cell_width}, ${8:cell_height}, ${9:display_cols}, ${10:display_rows}, ${11:dimension}, ${12:rank}, ${13:dimension}, ${14:sel})"
+    },
+  "image_remove_channel": {
+      "prefix": "image_remove_channel",
+      "body": "pdb.gimp_image_remove_channel(${1:image}, ${2:channel})"
+    },
+  "newsprint": {
+      "prefix": "newsprint",
+      "body": "pdb.plug_in_newsprint(${1:image}, ${2:drawable}, ${3:cell_width}, ${4:colorspace}, ${5:k_pullout}, ${6:gry_ang}, ${7:gry_spotfn}, ${8:red_ang}, ${9:red_spotfn}, ${10:grn_ang}, ${11:grn_spotfn}, ${12:blu_ang}, ${13:blu_spotfn}, ${14:oversample})"
+    },
+  "unit_get_plural": {
+      "prefix": "unit_get_plural",
+      "body": "pdb.gimp_unit_get_plural(${1:unit_id})"
+    },
+  "context_set_sample_merged": {
+      "prefix": "context_set_sample_merged",
+      "body": "pdb.gimp_context_set_sample_merged(${1:sample_merged})"
+    },
+  "file_ppm_save": {
+      "prefix": "file_ppm_save",
+      "body": "pdb.file_ppm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:raw})"
+    },
+  "item_transform_rotate": {
+      "prefix": "item_transform_rotate",
+      "body": "pdb.gimp_item_transform_rotate(${1:item}, ${2:angle}, ${3:auto_center}, ${4:center_x}, ${5:center_y})"
+    },
+  "selection_save": {
+      "prefix": "selection_save",
+      "body": "pdb.gimp_selection_save(${1:image})"
+    },
+  "image_attach_parasite": {
+      "prefix": "image_attach_parasite",
+      "body": "pdb.gimp_image_attach_parasite(${1:image}, ${2:parasite})"
+    },
+  "extension_script_fu": {
+      "prefix": "extension_script_fu",
+      "body": "pdb.extension_script_fu()"
+    },
+  "wavelet_decompose": {
+      "prefix": "wavelet_decompose",
+      "body": "pdb.plug_in_wavelet_decompose(${1:image}, ${2:drawable}, ${3:scales}, ${4:create_group}, ${5:create_masks})"
+    },
+  "gimprc_query": {
+      "prefix": "gimprc_query",
+      "body": "pdb.gimp_gimprc_query(${1:token})"
+    },
+  "jigsaw": {
+      "prefix": "jigsaw",
+      "body": "pdb.plug_in_jigsaw(${1:image}, ${2:drawable}, ${3:x}, ${4:y}, ${5:style}, ${6:blend_lines}, ${7:blend_amount})"
+    },
+  "burn_in_anim": {
+      "prefix": "burn_in_anim",
+      "body": "pdb.script_fu_burn_in_anim(${1:image}, ${2:drawable}, ${3:color}, ${4:toggle}, ${5:value}, ${6:value}, ${7:value}, ${8:toggle}, ${9:toggle}, ${10:value})"
+    },
+  "brush_get_info": {
+      "prefix": "brush_get_info",
+      "body": "pdb.gimp_brush_get_info(${1:name})"
+    },
+  "item_get_linked": {
+      "prefix": "item_get_linked",
+      "body": "pdb.gimp_item_get_linked(${1:item})"
+    },
+  "whirl_pinch": {
+      "prefix": "whirl_pinch",
+      "body": "pdb.plug_in_whirl_pinch(${1:image}, ${2:drawable}, ${3:whirl}, ${4:pinch}, ${5:radius})"
+    },
+  "context_set_line_width": {
+      "prefix": "context_set_line_width",
+      "body": "pdb.gimp_context_set_line_width(${1:line_width})"
+    },
+  "semiflatten": {
+      "prefix": "semiflatten",
+      "body": "pdb.plug_in_semiflatten(${1:image}, ${2:drawable})"
+    },
+  "layer_set_composite_mode": {
+      "prefix": "layer_set_composite_mode",
+      "body": "pdb.gimp_layer_set_composite_mode(${1:layer}, ${2:composite_mode})"
+    },
+  "flame": {
+      "prefix": "flame",
+      "body": "pdb.plug_in_flame(${1:image}, ${2:drawable})"
+    },
+  "context_get_paint_method": {
+      "prefix": "context_get_paint_method",
+      "body": "pdb.gimp_context_get_paint_method()"
+    },
+  "brush_get_hardness": {
+      "prefix": "brush_get_hardness",
+      "body": "pdb.gimp_brush_get_hardness(${1:name})"
+    },
+  "image_grid_set_offset": {
+      "prefix": "image_grid_set_offset",
+      "body": "pdb.gimp_image_grid_set_offset(${1:image}, ${2:xoffset}, ${3:yoffset})"
+    },
+  "file_xpm_save": {
+      "prefix": "file_xpm_save",
+      "body": "pdb.file_xpm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:threshold})"
+    },
+  "layer_is_floating_sel": {
+      "prefix": "layer_is_floating_sel",
+      "body": "pdb.gimp_layer_is_floating_sel(${1:layer})"
+    },
+  "help_concepts_paths": {
+      "prefix": "help_concepts_paths",
+      "body": "pdb.gimp_help_concepts_paths()"
+    },
+  "foggify": {
+      "prefix": "foggify",
+      "body": "pdb.python_fu_foggify(${1:image}, ${2:drawable}, ${3:name}, ${4:colour}, ${5:turbulence}, ${6:opacity})"
+    },
+  "image_get_effective_color_profile": {
+      "prefix": "image_get_effective_color_profile",
+      "body": "pdb.gimp_image_get_effective_color_profile(${1:image})"
+    },
+  "brush_set_shape": {
+      "prefix": "brush_set_shape",
+      "body": "pdb.gimp_brush_set_shape(${1:name}, ${2:shape_in})"
+    },
+  "file_raw_placeholder_rdc_load": {
+      "prefix": "file_raw_placeholder_rdc_load",
+      "body": "pdb.file_raw_placeholder_rdc_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_undo_group_start": {
+      "prefix": "image_undo_group_start",
+      "body": "pdb.gimp_image_undo_group_start(${1:image})"
+    },
+  "guides_from_selection": {
+      "prefix": "guides_from_selection",
+      "body": "pdb.script_fu_guides_from_selection(${1:image}, ${2:drawable})"
+    },
+  "procedural_db_get_data_size": {
+      "prefix": "procedural_db_get_data_size",
+      "body": "pdb.gimp_procedural_db_get_data_size(${1:identifier})"
+    },
+  "progress_install": {
+      "prefix": "progress_install",
+      "body": "pdb.gimp_progress_install(${1:progress_callback})"
+    },
+  "image_merge_visible_layers": {
+      "prefix": "image_merge_visible_layers",
+      "body": "pdb.gimp_image_merge_visible_layers(${1:image}, ${2:merge_type})"
+    },
+  "item_set_lock_position": {
+      "prefix": "item_set_lock_position",
+      "body": "pdb.gimp_item_set_lock_position(${1:item}, ${2:lock_position})"
+    },
+  "unit_get_symbol": {
+      "prefix": "unit_get_symbol",
+      "body": "pdb.gimp_unit_get_symbol(${1:unit_id})"
+    },
+  "drawable_is_rgb": {
+      "prefix": "drawable_is_rgb",
+      "body": "pdb.gimp_drawable_is_rgb(${1:drawable})"
+    },
+  "erase_rows": {
+      "prefix": "erase_rows",
+      "body": "pdb.script_fu_erase_rows(${1:image}, ${2:drawable}, ${3:option}, ${4:option}, ${5:option})"
+    },
+  "vpropagate": {
+      "prefix": "vpropagate",
+      "body": "pdb.plug_in_vpropagate(${1:image}, ${2:drawable}, ${3:propagate_mode}, ${4:propagating_channel}, ${5:propagating_rate}, ${6:direction_mask}, ${7:lower_limit}, ${8:upper_limit})"
+    },
+  "image_grid_set_style": {
+      "prefix": "image_grid_set_style",
+      "body": "pdb.gimp_image_grid_set_style(${1:image}, ${2:style})"
+    },
+  "drawable_has_alpha": {
+      "prefix": "drawable_has_alpha",
+      "body": "pdb.gimp_drawable_has_alpha(${1:drawable})"
+    },
+  "gradient_segment_get_right_color": {
+      "prefix": "gradient_segment_get_right_color",
+      "body": "pdb.gimp_gradient_segment_get_right_color(${1:name}, ${2:segment})"
+    },
+  "image_get_active_vectors": {
+      "prefix": "image_get_active_vectors",
+      "body": "pdb.gimp_image_get_active_vectors(${1:image})"
+    },
+  "layer_remove_mask": {
+      "prefix": "layer_remove_mask",
+      "body": "pdb.gimp_layer_remove_mask(${1:layer}, ${2:mode})"
+    },
+  "image_get_vectors": {
+      "prefix": "image_get_vectors",
+      "body": "pdb.gimp_image_get_vectors(${1:image})"
+    },
+  "context_get_line_miter_limit": {
+      "prefix": "context_get_line_miter_limit",
+      "body": "pdb.gimp_context_get_line_miter_limit()"
+    },
+  "erase_nth_rows": {
+      "prefix": "erase_nth_rows",
+      "body": "pdb.script_fu_erase_nth_rows(${1:image}, ${2:drawable}, ${3:option}, ${4:value}, ${5:option}, ${6:value})"
+    },
+  "file_openraster_save": {
+      "prefix": "file_openraster_save",
+      "body": "pdb.file_openraster_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "randomize_slur": {
+      "prefix": "randomize_slur",
+      "body": "pdb.plug_in_randomize_slur(${1:image}, ${2:drawable}, ${3:rndm_pct}, ${4:rndm_rcount}, ${5:randomize}, ${6:seed})"
+    },
+  "file_xz_save": {
+      "prefix": "file_xz_save",
+      "body": "pdb.file_xz_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "plugins_query": {
+      "prefix": "plugins_query",
+      "body": "pdb.gimp_plugins_query(${1:search_string})"
+    },
+  "palette_to_gradient_repeating": {
+      "prefix": "palette_to_gradient_repeating",
+      "body": "pdb.python_fu_palette_to_gradient_repeating(${1:palette})"
+    },
+  "file_print_gtk_page_setup": {
+      "prefix": "file_print_gtk_page_setup",
+      "body": "pdb.file_print_gtk_page_setup(${1:image})"
+    },
+  "plugin_icon_register": {
+      "prefix": "plugin_icon_register",
+      "body": "pdb.gimp_plugin_icon_register(${1:procedure_name}, ${2:icon_type}, ${3:icon_data_length}, ${4:icon_data})"
+    },
+  "xach_effect": {
+      "prefix": "xach_effect",
+      "body": "pdb.script_fu_xach_effect(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:color}, ${6:value}, ${7:color}, ${8:value}, ${9:value}, ${10:value}, ${11:value}, ${12:toggle})"
+    },
+  "image_get_parasite_list": {
+      "prefix": "image_get_parasite_list",
+      "body": "pdb.gimp_image_get_parasite_list(${1:image})"
+    },
+  "clothify": {
+      "prefix": "clothify",
+      "body": "pdb.script_fu_clothify(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:value}, ${7:value})"
+    },
+  "animationplay": {
+      "prefix": "animationplay",
+      "body": "pdb.plug_in_animationplay(${1:image}, ${2:drawable})"
+    },
+  "context_get_sample_transparent": {
+      "prefix": "context_get_sample_transparent",
+      "body": "pdb.gimp_context_get_sample_transparent()"
+    },
+  "red_eye_removal": {
+      "prefix": "red_eye_removal",
+      "body": "pdb.plug_in_red_eye_removal(${1:image}, ${2:drawable}, ${3:threshold})"
+    },
+  "image_resize": {
+      "prefix": "image_resize",
+      "body": "pdb.gimp_image_resize(${1:image}, ${2:new_width}, ${3:new_height}, ${4:offx}, ${5:offy})"
+    },
+  "file_gif_load": {
+      "prefix": "file_gif_load",
+      "body": "pdb.file_gif_load(${1:filename}, ${2:raw_filename})"
+    },
+  "decompose_registered": {
+      "prefix": "decompose_registered",
+      "body": "pdb.plug_in_decompose_registered(${1:image}, ${2:drawable}, ${3:decompose_type}, ${4:layers_mode})"
+    },
+  "text_fontname": {
+      "prefix": "text_fontname",
+      "body": "pdb.gimp_text_fontname(${1:image}, ${2:drawable}, ${3:x}, ${4:y}, ${5:text}, ${6:border}, ${7:antialias}, ${8:size}, ${9:size_type}, ${10:fontname})"
+    },
+  "file_pcx_load": {
+      "prefix": "file_pcx_load",
+      "body": "pdb.file_pcx_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_heif_load": {
+      "prefix": "file_heif_load",
+      "body": "pdb.file_heif_load(${1:uri}, ${2:raw_uri})"
+    },
+  "vectors_export_to_file": {
+      "prefix": "vectors_export_to_file",
+      "body": "pdb.gimp_vectors_export_to_file(${1:image}, ${2:filename}, ${3:vectors})"
+    },
+  "image_raise_item": {
+      "prefix": "image_raise_item",
+      "body": "pdb.gimp_image_raise_item(${1:image}, ${2:item})"
+    },
+  "context_get_sample_criterion": {
+      "prefix": "context_get_sample_criterion",
+      "body": "pdb.gimp_context_get_sample_criterion()"
+    },
+  "airbrush": {
+      "prefix": "airbrush",
+      "body": "pdb.gimp_airbrush(${1:drawable}, ${2:pressure}, ${3:num_strokes}, ${4:strokes})"
+    },
+  "file_pdf_save_multi": {
+      "prefix": "file_pdf_save_multi",
+      "body": "pdb.file_pdf_save_multi(${1:count}, ${2:images}, ${3:vectorize}, ${4:ignore_hidden}, ${5:apply_masks}, ${6:filename}, ${7:raw_filename})"
+    },
+  "vectors_new": {
+      "prefix": "vectors_new",
+      "body": "pdb.gimp_vectors_new(${1:image}, ${2:name})"
+    },
+  "make_seamless": {
+      "prefix": "make_seamless",
+      "body": "pdb.plug_in_make_seamless(${1:image}, ${2:drawable})"
+    },
+  "deinterlace": {
+      "prefix": "deinterlace",
+      "body": "pdb.plug_in_deinterlace(${1:image}, ${2:drawable}, ${3:evenodd})"
+    },
+  "selection_bounds": {
+      "prefix": "selection_bounds",
+      "body": "pdb.gimp_selection_bounds(${1:image})"
+    },
+  "palette_get_columns": {
+      "prefix": "palette_get_columns",
+      "body": "pdb.gimp_palette_get_columns(${1:name})"
+    },
+  "procedural_db_set_data": {
+      "prefix": "procedural_db_set_data",
+      "body": "pdb.gimp_procedural_db_set_data(${1:identifier}, ${2:bytes}, ${3:data})"
+    },
+  "brushes_close_popup": {
+      "prefix": "brushes_close_popup",
+      "body": "pdb.gimp_brushes_close_popup(${1:brush_callback})"
+    },
+  "softglow": {
+      "prefix": "softglow",
+      "body": "pdb.plug_in_softglow(${1:image}, ${2:drawable}, ${3:glow_radius}, ${4:brightness}, ${5:sharpness})"
+    },
+  "image_grid_get_background_color": {
+      "prefix": "image_grid_get_background_color",
+      "body": "pdb.gimp_image_grid_get_background_color(${1:image})"
+    },
+  "retinex": {
+      "prefix": "retinex",
+      "body": "pdb.plug_in_retinex(${1:image}, ${2:drawable}, ${3:scale}, ${4:nscales}, ${5:scales_mode}, ${6:cvar})"
+    },
+  "drawable_levels": {
+      "prefix": "drawable_levels",
+      "body": "pdb.gimp_drawable_levels(${1:drawable}, ${2:channel}, ${3:low_input}, ${4:high_input}, ${5:clamp_input}, ${6:gamma}, ${7:low_output}, ${8:high_output}, ${9:clamp_output})"
+    },
+  "eraser": {
+      "prefix": "eraser",
+      "body": "pdb.gimp_eraser(${1:drawable}, ${2:num_strokes}, ${3:strokes}, ${4:hardness}, ${5:method})"
+    },
+  "text_layer_get_kerning": {
+      "prefix": "text_layer_get_kerning",
+      "body": "pdb.gimp_text_layer_get_kerning(${1:layer})"
+    },
+  "drawable_height": {
+      "prefix": "drawable_height",
+      "body": "pdb.gimp_drawable_height(${1:drawable})"
+    },
+  "message_get_handler": {
+      "prefix": "message_get_handler",
+      "body": "pdb.gimp_message_get_handler()"
+    },
+  "palette_sort": {
+      "prefix": "palette_sort",
+      "body": "pdb.python_fu_palette_sort(${1:palette}, ${2:selections}, ${3:slice_expr}, ${4:channel1}, ${5:ascending1}, ${6:channel2}, ${7:ascending2}, ${8:quantize}, ${9:pchannel}, ${10:pquantize})"
+    },
+  "file_raw_placeholder_pef_load": {
+      "prefix": "file_raw_placeholder_pef_load",
+      "body": "pdb.file_raw_placeholder_pef_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_bmp_load": {
+      "prefix": "file_bmp_load",
+      "body": "pdb.file_bmp_load(${1:filename}, ${2:raw_filename})"
+    },
+  "context_get_feather_radius": {
+      "prefix": "context_get_feather_radius",
+      "body": "pdb.gimp_context_get_feather_radius()"
+    },
+  "paintbrush": {
+      "prefix": "paintbrush",
+      "body": "pdb.gimp_paintbrush(${1:drawable}, ${2:fade_out}, ${3:num_strokes}, ${4:strokes}, ${5:method}, ${6:gradient_length})"
+    },
+  "displays_reconnect": {
+      "prefix": "displays_reconnect",
+      "body": "pdb.gimp_displays_reconnect(${1:old_image}, ${2:new_image})"
+    },
+  "image_select_rectangle": {
+      "prefix": "image_select_rectangle",
+      "body": "pdb.gimp_image_select_rectangle(${1:image}, ${2:operation}, ${3:x}, ${4:y}, ${5:width}, ${6:height})"
+    },
+  "file_raw_placeholder_nikon_load": {
+      "prefix": "file_raw_placeholder_nikon_load",
+      "body": "pdb.file_raw_placeholder_nikon_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_fli_load": {
+      "prefix": "file_fli_load",
+      "body": "pdb.file_fli_load(${1:filename}, ${2:raw_filename})"
+    },
+  "gradient_segment_range_blend_colors": {
+      "prefix": "gradient_segment_range_blend_colors",
+      "body": "pdb.gimp_gradient_segment_range_blend_colors(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "unit_get_number_of_units": {
+      "prefix": "unit_get_number_of_units",
+      "body": "pdb.gimp_unit_get_number_of_units()"
+    },
+  "image_select_polygon": {
+      "prefix": "image_select_polygon",
+      "body": "pdb.gimp_image_select_polygon(${1:image}, ${2:operation}, ${3:num_segs}, ${4:segs})"
+    },
+  "wind": {
+      "prefix": "wind",
+      "body": "pdb.plug_in_wind(${1:image}, ${2:drawable}, ${3:threshold}, ${4:direction}, ${5:strength}, ${6:algorithm}, ${7:edge})"
+    },
+  "text_layer_set_kerning": {
+      "prefix": "text_layer_set_kerning",
+      "body": "pdb.gimp_text_layer_set_kerning(${1:layer}, ${2:kerning})"
+    },
+  "selection_sharpen": {
+      "prefix": "selection_sharpen",
+      "body": "pdb.gimp_selection_sharpen(${1:image})"
+    },
+  "brush_set_aspect_ratio": {
+      "prefix": "brush_set_aspect_ratio",
+      "body": "pdb.gimp_brush_set_aspect_ratio(${1:name}, ${2:aspect_ratio_in})"
+    },
+  "message_set_handler": {
+      "prefix": "message_set_handler",
+      "body": "pdb.gimp_message_set_handler(${1:handler})"
+    },
+  "erode": {
+      "prefix": "erode",
+      "body": "pdb.plug_in_erode(${1:image}, ${2:drawable}, ${3:propagate_mode}, ${4:propagating_channel}, ${5:propagating_rate}, ${6:direction_mask}, ${7:lower_limit}, ${8:upper_limit})"
+    },
+  "guides_remove": {
+      "prefix": "guides_remove",
+      "body": "pdb.script_fu_guides_remove(${1:image}, ${2:drawable})"
+    },
+  "context_get_brush_hardness": {
+      "prefix": "context_get_brush_hardness",
+      "body": "pdb.gimp_context_get_brush_hardness()"
+    },
+  "progress_end": {
+      "prefix": "progress_end",
+      "body": "pdb.gimp_progress_end()"
+    },
+  "text_layer_get_font": {
+      "prefix": "text_layer_get_font",
+      "body": "pdb.gimp_text_layer_get_font(${1:layer})"
+    },
+  "gmic_qt": {
+      "prefix": "gmic_qt",
+      "body": "pdb.plug_in_gmic_qt(${1:image}, ${2:drawable}, ${3:input}, ${4:output}, ${5:command})"
+    },
+  "vectors_new_from_text_layer": {
+      "prefix": "vectors_new_from_text_layer",
+      "body": "pdb.gimp_vectors_new_from_text_layer(${1:image}, ${2:layer})"
+    },
+  "text_layer_set_language": {
+      "prefix": "text_layer_set_language",
+      "body": "pdb.gimp_text_layer_set_language(${1:layer}, ${2:language})"
+    },
+  "image_thaw_layers": {
+      "prefix": "image_thaw_layers",
+      "body": "pdb.gimp_image_thaw_layers(${1:image})"
+    },
+  "file_desktop_link_load": {
+      "prefix": "file_desktop_link_load",
+      "body": "pdb.file_desktop_link_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_add_vguide": {
+      "prefix": "image_add_vguide",
+      "body": "pdb.gimp_image_add_vguide(${1:image}, ${2:xposition})"
+    },
+  "sinus": {
+      "prefix": "sinus",
+      "body": "pdb.plug_in_sinus(${1:image}, ${2:drawable}, ${3:xscale}, ${4:yscale}, ${5:complex}, ${6:seed}, ${7:tiling}, ${8:perturb}, ${9:colors}, ${10:col1}, ${11:col2}, ${12:alpha1}, ${13:alpha2}, ${14:blend}, ${15:blend_power})"
+    },
+  "dynamics_refresh": {
+      "prefix": "dynamics_refresh",
+      "body": "pdb.gimp_dynamics_refresh()"
+    },
+  "make_brush_elliptical_feathered": {
+      "prefix": "make_brush_elliptical_feathered",
+      "body": "pdb.script_fu_make_brush_elliptical_feathered(${1:string}, ${2:value}, ${3:value}, ${4:value}, ${5:value})"
+    },
+  "image_convert_indexed": {
+      "prefix": "image_convert_indexed",
+      "body": "pdb.gimp_image_convert_indexed(${1:image}, ${2:dither_type}, ${3:palette_type}, ${4:num_cols}, ${5:alpha_dither}, ${6:remove_unused}, ${7:palette})"
+    },
+  "context_set_brush_default_spacing": {
+      "prefix": "context_set_brush_default_spacing",
+      "body": "pdb.gimp_context_set_brush_default_spacing()"
+    },
+  "image_get_imported_uri": {
+      "prefix": "image_get_imported_uri",
+      "body": "pdb.gimp_image_get_imported_uri(${1:image})"
+    },
+  "image_freeze_layers": {
+      "prefix": "image_freeze_layers",
+      "body": "pdb.gimp_image_freeze_layers(${1:image})"
+    },
+  "image_is_valid": {
+      "prefix": "image_is_valid",
+      "body": "pdb.gimp_image_is_valid(${1:image})"
+    },
+  "drawable_bpp": {
+      "prefix": "drawable_bpp",
+      "body": "pdb.gimp_drawable_bpp(${1:drawable})"
+    },
+  "lava": {
+      "prefix": "lava",
+      "body": "pdb.script_fu_lava(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:gradient}, ${7:toggle}, ${8:toggle}, ${9:toggle})"
+    },
+  "antialias": {
+      "prefix": "antialias",
+      "body": "pdb.plug_in_antialias(${1:image}, ${2:drawable})"
+    },
+  "grid": {
+      "prefix": "grid",
+      "body": "pdb.plug_in_grid(${1:image}, ${2:drawable}, ${3:hwidth}, ${4:hspace}, ${5:hoffset}, ${6:hcolor}, ${7:hopacity}, ${8:vwidth}, ${9:vspace}, ${10:voffset}, ${11:vcolor}, ${12:vopacity}, ${13:iwidth}, ${14:ispace}, ${15:ioffset}, ${16:icolor}, ${17:iopacity})"
+    },
+  "text_layer_set_hint_style": {
+      "prefix": "text_layer_set_hint_style",
+      "body": "pdb.gimp_text_layer_set_hint_style(${1:layer}, ${2:style})"
+    },
+  "heal_default": {
+      "prefix": "heal_default",
+      "body": "pdb.gimp_heal_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "file_pat_save_internal": {
+      "prefix": "file_pat_save_internal",
+      "body": "pdb.file_pat_save_internal(${1:dummy_param}, ${2:image}, ${3:drawable}, ${4:uri}, ${5:raw_uri}, ${6:name})"
+    },
+  "image_get_guide_position": {
+      "prefix": "image_get_guide_position",
+      "body": "pdb.gimp_image_get_guide_position(${1:image}, ${2:guide})"
+    },
+  "palette_export_java": {
+      "prefix": "palette_export_java",
+      "body": "pdb.gimp_palette_export_java(${1:dirname}, ${2:string})"
+    },
+  "file_jpeg_save": {
+      "prefix": "file_jpeg_save",
+      "body": "pdb.file_jpeg_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:quality}, ${6:smoothing}, ${7:optimize}, ${8:progressive}, ${9:comment}, ${10:subsmp}, ${11:baseline}, ${12:restart}, ${13:dct})"
+    },
+  "text_layer_get_language": {
+      "prefix": "text_layer_get_language",
+      "body": "pdb.gimp_text_layer_get_language(${1:layer})"
+    },
+  "detach_parasite": {
+      "prefix": "detach_parasite",
+      "body": "pdb.gimp_detach_parasite(${1:name})"
+    },
+  "gradient_duplicate": {
+      "prefix": "gradient_duplicate",
+      "body": "pdb.gimp_gradient_duplicate(${1:name})"
+    },
+  "file_gz_save": {
+      "prefix": "file_gz_save",
+      "body": "pdb.file_gz_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "animationoptimize_diff": {
+      "prefix": "animationoptimize_diff",
+      "body": "pdb.plug_in_animationoptimize_diff(${1:image}, ${2:drawable})"
+    },
+  "file_pix_save": {
+      "prefix": "file_pix_save",
+      "body": "pdb.file_pix_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "tile": {
+      "prefix": "tile",
+      "body": "pdb.plug_in_tile(${1:image}, ${2:drawable}, ${3:new_width}, ${4:new_height}, ${5:new_image})"
+    },
+  "selection_all": {
+      "prefix": "selection_all",
+      "body": "pdb.gimp_selection_all(${1:image})"
+    },
+  "procedural_db_proc_info": {
+      "prefix": "procedural_db_proc_info",
+      "body": "pdb.gimp_procedural_db_proc_info(${1:procedure_name})"
+    },
+  "fonts_close_popup": {
+      "prefix": "fonts_close_popup",
+      "body": "pdb.gimp_fonts_close_popup(${1:font_callback})"
+    },
+  "icc_profile_set": {
+      "prefix": "icc_profile_set",
+      "body": "pdb.plug_in_icc_profile_set(${1:image}, ${2:profile})"
+    },
+  "layer_set_lock_alpha": {
+      "prefix": "layer_set_lock_alpha",
+      "body": "pdb.gimp_layer_set_lock_alpha(${1:layer}, ${2:lock_alpha})"
+    },
+  "layer_from_mask": {
+      "prefix": "layer_from_mask",
+      "body": "pdb.gimp_layer_from_mask(${1:mask})"
+    },
+  "image_find_next_guide": {
+      "prefix": "image_find_next_guide",
+      "body": "pdb.gimp_image_find_next_guide(${1:image}, ${2:guide})"
+    },
+  "oilify_enhanced": {
+      "prefix": "oilify_enhanced",
+      "body": "pdb.plug_in_oilify_enhanced(${1:image}, ${2:drawable}, ${3:mode}, ${4:mask_size}, ${5:mask_size_map}, ${6:exponent}, ${7:exponent_map})"
+    },
+  "register_file_handler_raw": {
+      "prefix": "register_file_handler_raw",
+      "body": "pdb.gimp_register_file_handler_raw(${1:procedure_name})"
+    },
+  "vectors_stroke_get_points": {
+      "prefix": "vectors_stroke_get_points",
+      "body": "pdb.gimp_vectors_stroke_get_points(${1:vectors}, ${2:stroke_id})"
+    },
+  "item_detach_parasite": {
+      "prefix": "item_detach_parasite",
+      "body": "pdb.gimp_item_detach_parasite(${1:item}, ${2:name})"
+    },
+  "brushes_set_popup": {
+      "prefix": "brushes_set_popup",
+      "body": "pdb.gimp_brushes_set_popup(${1:brush_callback}, ${2:brush_name}, ${3:opacity}, ${4:spacing}, ${5:paint_mode})"
+    },
+  "unit_get_identifier": {
+      "prefix": "unit_get_identifier",
+      "body": "pdb.gimp_unit_get_identifier(${1:unit_id})"
+    },
+  "file_raw_save": {
+      "prefix": "file_raw_save",
+      "body": "pdb.file_raw_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "file_raw_placeholder_panasonic_load": {
+      "prefix": "file_raw_placeholder_panasonic_load",
+      "body": "pdb.file_raw_placeholder_panasonic_load(${1:filename}, ${2:raw_filename})"
+    },
+  "layer_group_new": {
+      "prefix": "layer_group_new",
+      "body": "pdb.gimp_layer_group_new(${1:image})"
+    },
+  "brushes_get_list": {
+      "prefix": "brushes_get_list",
+      "body": "pdb.gimp_brushes_get_list(${1:filter})"
+    },
+  "context_set_brush_aspect_ratio": {
+      "prefix": "context_set_brush_aspect_ratio",
+      "body": "pdb.gimp_context_set_brush_aspect_ratio(${1:aspect})"
+    },
+  "file_psp_load": {
+      "prefix": "file_psp_load",
+      "body": "pdb.file_psp_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_gtm_save": {
+      "prefix": "file_gtm_save",
+      "body": "pdb.file_gtm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "context_get_line_cap_style": {
+      "prefix": "context_get_line_cap_style",
+      "body": "pdb.gimp_context_get_line_cap_style()"
+    },
+  "edit_named_paste_as_new_image": {
+      "prefix": "edit_named_paste_as_new_image",
+      "body": "pdb.gimp_edit_named_paste_as_new_image(${1:buffer_name})"
+    },
+  "file_psd_load_merged": {
+      "prefix": "file_psd_load_merged",
+      "body": "pdb.file_psd_load_merged(${1:filename}, ${2:raw_filename})"
+    },
+  "image_grid_get_foreground_color": {
+      "prefix": "image_grid_get_foreground_color",
+      "body": "pdb.gimp_image_grid_get_foreground_color(${1:image})"
+    },
+  "unit_get_deletion_flag": {
+      "prefix": "unit_get_deletion_flag",
+      "body": "pdb.gimp_unit_get_deletion_flag(${1:unit_id})"
+    },
+  "ripply_anim": {
+      "prefix": "ripply_anim",
+      "body": "pdb.script_fu_ripply_anim(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:option})"
+    },
+  "laplace": {
+      "prefix": "laplace",
+      "body": "pdb.plug_in_laplace(${1:image}, ${2:drawable})"
+    },
+  "context_set_brush_default_hardness": {
+      "prefix": "context_set_brush_default_hardness",
+      "body": "pdb.gimp_context_set_brush_default_hardness()"
+    },
+  "palettemap": {
+      "prefix": "palettemap",
+      "body": "pdb.plug_in_palettemap(${1:image}, ${2:drawable})"
+    },
+  "palette_entry_set_name": {
+      "prefix": "palette_entry_set_name",
+      "body": "pdb.gimp_palette_entry_set_name(${1:name}, ${2:entry_num}, ${3:entry_name})"
+    },
+  "image_width": {
+      "prefix": "image_width",
+      "body": "pdb.gimp_image_width(${1:image})"
+    },
+  "polar_coords": {
+      "prefix": "polar_coords",
+      "body": "pdb.plug_in_polar_coords(${1:image}, ${2:drawable}, ${3:circle}, ${4:angle}, ${5:backwards}, ${6:inverse}, ${7:polrec})"
+    },
+  "file_bz2_save": {
+      "prefix": "file_bz2_save",
+      "body": "pdb.file_bz2_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "item_is_drawable": {
+      "prefix": "item_is_drawable",
+      "body": "pdb.gimp_item_is_drawable(${1:item})"
+    },
+  "glasstile": {
+      "prefix": "glasstile",
+      "body": "pdb.plug_in_glasstile(${1:image}, ${2:drawable}, ${3:tilex}, ${4:tiley})"
+    },
+  "channel_copy": {
+      "prefix": "channel_copy",
+      "body": "pdb.gimp_channel_copy(${1:channel})"
+    },
+  "item_get_parent": {
+      "prefix": "item_get_parent",
+      "body": "pdb.gimp_item_get_parent(${1:item})"
+    },
+  "file_raw_placeholder_sinar_load": {
+      "prefix": "file_raw_placeholder_sinar_load",
+      "body": "pdb.file_raw_placeholder_sinar_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_thaw_vectors": {
+      "prefix": "image_thaw_vectors",
+      "body": "pdb.gimp_image_thaw_vectors(${1:image})"
+    },
+  "file_fits_save": {
+      "prefix": "file_fits_save",
+      "body": "pdb.file_fits_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "context_set_paint_mode": {
+      "prefix": "context_set_paint_mode",
+      "body": "pdb.gimp_context_set_paint_mode(${1:paint_mode})"
+    },
+  "vectors_stroke_scale": {
+      "prefix": "vectors_stroke_scale",
+      "body": "pdb.gimp_vectors_stroke_scale(${1:vectors}, ${2:stroke_id}, ${3:scale_x}, ${4:scale_y})"
+    },
+  "file_print_gtk": {
+      "prefix": "file_print_gtk",
+      "body": "pdb.file_print_gtk(${1:image})"
+    },
+  "mblur_inward": {
+      "prefix": "mblur_inward",
+      "body": "pdb.plug_in_mblur_inward(${1:image}, ${2:drawable}, ${3:type}, ${4:length}, ${5:angle}, ${6:center_x}, ${7:center_y})"
+    },
+  "floating_sel_attach": {
+      "prefix": "floating_sel_attach",
+      "body": "pdb.gimp_floating_sel_attach(${1:layer}, ${2:drawable})"
+    },
+  "brush_get_angle": {
+      "prefix": "brush_get_angle",
+      "body": "pdb.gimp_brush_get_angle(${1:name})"
+    },
+  "image_insert_layer": {
+      "prefix": "image_insert_layer",
+      "body": "pdb.gimp_image_insert_layer(${1:image}, ${2:layer}, ${3:parent}, ${4:position})"
+    },
+  "text_layer_get_markup": {
+      "prefix": "text_layer_get_markup",
+      "body": "pdb.gimp_text_layer_get_markup(${1:layer})"
+    },
+  "compose": {
+      "prefix": "compose",
+      "body": "pdb.plug_in_compose(${1:image1}, ${2:drawable}, ${3:image2}, ${4:image3}, ${5:image4}, ${6:compose_type})"
+    },
+  "context_set_line_cap_style": {
+      "prefix": "context_set_line_cap_style",
+      "body": "pdb.gimp_context_set_line_cap_style(${1:cap_style})"
+    },
+  "palette_duplicate": {
+      "prefix": "palette_duplicate",
+      "body": "pdb.gimp_palette_duplicate(${1:name})"
+    },
+  "edit_named_paste": {
+      "prefix": "edit_named_paste",
+      "body": "pdb.gimp_edit_named_paste(${1:drawable}, ${2:buffer_name}, ${3:paste_into})"
+    },
+  "image_select_ellipse": {
+      "prefix": "image_select_ellipse",
+      "body": "pdb.gimp_image_select_ellipse(${1:image}, ${2:operation}, ${3:x}, ${4:y}, ${5:width}, ${6:height})"
+    },
+  "item_is_text_layer": {
+      "prefix": "item_is_text_layer",
+      "body": "pdb.gimp_item_is_text_layer(${1:item})"
+    },
+  "drawable_sub_thumbnail": {
+      "prefix": "drawable_sub_thumbnail",
+      "body": "pdb.gimp_drawable_sub_thumbnail(${1:drawable}, ${2:src_x}, ${3:src_y}, ${4:src_width}, ${5:src_height}, ${6:dest_width}, ${7:dest_height})"
+    },
+  "buffer_delete": {
+      "prefix": "buffer_delete",
+      "body": "pdb.gimp_buffer_delete(${1:buffer_name})"
+    },
+  "image_get_component_visible": {
+      "prefix": "image_get_component_visible",
+      "body": "pdb.gimp_image_get_component_visible(${1:image}, ${2:component})"
+    },
+  "context_get_ink_tilt_sensitivity": {
+      "prefix": "context_get_ink_tilt_sensitivity",
+      "body": "pdb.gimp_context_get_ink_tilt_sensitivity()"
+    },
+  "context_set_foreground": {
+      "prefix": "context_set_foreground",
+      "body": "pdb.gimp_context_set_foreground(${1:foreground})"
+    },
+  "sota_chrome_it": {
+      "prefix": "sota_chrome_it",
+      "body": "pdb.script_fu_sota_chrome_it(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:filename}, ${7:color}, ${8:color}, ${9:toggle})"
+    },
+  "quit": {
+      "prefix": "quit",
+      "body": "pdb.gimp_quit(${1:force})"
+    },
+  "image_convert_grayscale": {
+      "prefix": "image_convert_grayscale",
+      "body": "pdb.gimp_image_convert_grayscale(${1:image})"
+    },
+  "dodgeburn": {
+      "prefix": "dodgeburn",
+      "body": "pdb.gimp_dodgeburn(${1:drawable}, ${2:exposure}, ${3:dodgeburn_type}, ${4:dodgeburn_mode}, ${5:num_strokes}, ${6:strokes})"
+    },
+  "context_set_diagonal_neighbors": {
+      "prefix": "context_set_diagonal_neighbors",
+      "body": "pdb.gimp_context_set_diagonal_neighbors(${1:diagonal_neighbors})"
+    },
+  "file_tiff_save": {
+      "prefix": "file_tiff_save",
+      "body": "pdb.file_tiff_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:compression})"
+    },
+  "item_is_valid": {
+      "prefix": "item_is_valid",
+      "body": "pdb.gimp_item_is_valid(${1:item})"
+    },
+  "online_docs_web_site": {
+      "prefix": "online_docs_web_site",
+      "body": "pdb.gimp_online_docs_web_site()"
+    },
+  "shift": {
+      "prefix": "shift",
+      "body": "pdb.plug_in_shift(${1:image}, ${2:drawable}, ${3:shift_amount}, ${4:orientation})"
+    },
+  "context_get_sample_threshold_int": {
+      "prefix": "context_get_sample_threshold_int",
+      "body": "pdb.gimp_context_get_sample_threshold_int()"
+    },
+  "buffer_get_width": {
+      "prefix": "buffer_get_width",
+      "body": "pdb.gimp_buffer_get_width(${1:buffer_name})"
+    },
+  "channel_combine_masks": {
+      "prefix": "channel_combine_masks",
+      "body": "pdb.gimp_channel_combine_masks(${1:channel1}, ${2:channel2}, ${3:operation}, ${4:offx}, ${5:offy})"
+    },
+  "layer_set_show_mask": {
+      "prefix": "layer_set_show_mask",
+      "body": "pdb.gimp_layer_set_show_mask(${1:layer}, ${2:show_mask})"
+    },
+  "file_load_rgbe": {
+      "prefix": "file_load_rgbe",
+      "body": "pdb.file_load_rgbe(${1:filename}, ${2:raw_filename})"
+    },
+  "item_get_tattoo": {
+      "prefix": "item_get_tattoo",
+      "body": "pdb.gimp_item_get_tattoo(${1:item})"
+    },
+  "file_load_thumbnail": {
+      "prefix": "file_load_thumbnail",
+      "body": "pdb.gimp_file_load_thumbnail(${1:filename})"
+    },
+  "item_set_linked": {
+      "prefix": "item_set_linked",
+      "body": "pdb.gimp_item_set_linked(${1:item}, ${2:linked})"
+    },
+  "layer_add_mask": {
+      "prefix": "layer_add_mask",
+      "body": "pdb.gimp_layer_add_mask(${1:layer}, ${2:mask})"
+    },
+  "progress_init": {
+      "prefix": "progress_init",
+      "body": "pdb.gimp_progress_init(${1:message}, ${2:gdisplay})"
+    },
+  "gradient_is_editable": {
+      "prefix": "gradient_is_editable",
+      "body": "pdb.gimp_gradient_is_editable(${1:name})"
+    },
+  "temp_name": {
+      "prefix": "temp_name",
+      "body": "pdb.gimp_temp_name(${1:extension})"
+    },
+  "image_get_resolution": {
+      "prefix": "image_get_resolution",
+      "body": "pdb.gimp_image_get_resolution(${1:image})"
+    },
+  "curve_bend_Iterator": {
+      "prefix": "curve_bend_Iterator",
+      "body": "pdb.plug_in_curve_bend_Iterator(${1:total_steps}, ${2:current_step}, ${3:len_struct})"
+    },
+  "image_get_sample_point_position": {
+      "prefix": "image_get_sample_point_position",
+      "body": "pdb.gimp_image_get_sample_point_position(${1:image}, ${2:sample_point})"
+    },
+  "image_freeze_vectors": {
+      "prefix": "image_freeze_vectors",
+      "body": "pdb.gimp_image_freeze_vectors(${1:image})"
+    },
+  "channel_set_show_masked": {
+      "prefix": "channel_set_show_masked",
+      "body": "pdb.gimp_channel_set_show_masked(${1:channel}, ${2:show_masked})"
+    },
+  "animationunoptimize": {
+      "prefix": "animationunoptimize",
+      "body": "pdb.plug_in_animationunoptimize(${1:image}, ${2:drawable})"
+    },
+  "context_get_feather": {
+      "prefix": "context_get_feather",
+      "body": "pdb.gimp_context_get_feather()"
+    },
+  "web_page": {
+      "prefix": "web_page",
+      "body": "pdb.plug_in_web_page(${1:url}, ${2:width}, ${3:font_size})"
+    },
+  "context_get_line_width": {
+      "prefix": "context_get_line_width",
+      "body": "pdb.gimp_context_get_line_width()"
+    },
+  "selection_shrink": {
+      "prefix": "selection_shrink",
+      "body": "pdb.gimp_selection_shrink(${1:image}, ${2:steps})"
+    },
+  "help_using_web": {
+      "prefix": "help_using_web",
+      "body": "pdb.gimp_help_using_web()"
+    },
+  "spheredesigner": {
+      "prefix": "spheredesigner",
+      "body": "pdb.plug_in_spheredesigner(${1:image}, ${2:drawable})"
+    },
+  "text_layer_get_letter_spacing": {
+      "prefix": "text_layer_get_letter_spacing",
+      "body": "pdb.gimp_text_layer_get_letter_spacing(${1:layer})"
+    },
+  "context_set_transform_resize": {
+      "prefix": "context_set_transform_resize",
+      "body": "pdb.gimp_context_set_transform_resize(${1:transform_resize})"
+    },
+  "applylens": {
+      "prefix": "applylens",
+      "body": "pdb.plug_in_applylens(${1:image}, ${2:drawable}, ${3:refraction}, ${4:keep_surroundings}, ${5:set_background}, ${6:set_transparent})"
+    },
+  "blend_anim": {
+      "prefix": "blend_anim",
+      "body": "pdb.script_fu_blend_anim(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:toggle})"
+    },
+  "palette_delete_entry": {
+      "prefix": "palette_delete_entry",
+      "body": "pdb.gimp_palette_delete_entry(${1:name}, ${2:entry_num})"
+    },
+  "file_hgt_load": {
+      "prefix": "file_hgt_load",
+      "body": "pdb.file_hgt_load(${1:filename}, ${2:raw_filename}, ${3:samplespacing})"
+    },
+  "file_xbm_load": {
+      "prefix": "file_xbm_load",
+      "body": "pdb.file_xbm_load(${1:filename}, ${2:raw_filename})"
+    },
+  "gauss_iir": {
+      "prefix": "gauss_iir",
+      "body": "pdb.plug_in_gauss_iir(${1:image}, ${2:drawable}, ${3:radius}, ${4:horizontal}, ${5:vertical})"
+    },
+  "vectors_stroke_get_length": {
+      "prefix": "vectors_stroke_get_length",
+      "body": "pdb.gimp_vectors_stroke_get_length(${1:vectors}, ${2:stroke_id}, ${3:precision})"
+    },
+  "image_undo_is_enabled": {
+      "prefix": "image_undo_is_enabled",
+      "body": "pdb.gimp_image_undo_is_enabled(${1:image})"
+    },
+  "hsv_noise": {
+      "prefix": "hsv_noise",
+      "body": "pdb.plug_in_hsv_noise(${1:image}, ${2:drawable}, ${3:holdness}, ${4:hue_distance}, ${5:saturation_distance}, ${6:value_distance})"
+    },
+  "file_png_save_defaults": {
+      "prefix": "file_png_save_defaults",
+      "body": "pdb.file_png_save_defaults(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "progress_pulse": {
+      "prefix": "progress_pulse",
+      "body": "pdb.gimp_progress_pulse()"
+    },
+  "despeckle": {
+      "prefix": "despeckle",
+      "body": "pdb.plug_in_despeckle(${1:image}, ${2:drawable}, ${3:radius}, ${4:type}, ${5:black}, ${6:white})"
+    },
+  "context_get_line_dash_offset": {
+      "prefix": "context_get_line_dash_offset",
+      "body": "pdb.gimp_context_get_line_dash_offset()"
+    },
+  "palettes_set_popup": {
+      "prefix": "palettes_set_popup",
+      "body": "pdb.gimp_palettes_set_popup(${1:palette_callback}, ${2:palette_name})"
+    },
+  "image_get_exported_uri": {
+      "prefix": "image_get_exported_uri",
+      "body": "pdb.gimp_image_get_exported_uri(${1:image})"
+    },
+  "file_jp2_load": {
+      "prefix": "file_jp2_load",
+      "body": "pdb.file_jp2_load(${1:filename}, ${2:raw_filename})"
+    },
+  "coffee_stain": {
+      "prefix": "coffee_stain",
+      "body": "pdb.script_fu_coffee_stain(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle})"
+    },
+  "vectors_import_from_file": {
+      "prefix": "vectors_import_from_file",
+      "body": "pdb.gimp_vectors_import_from_file(${1:image}, ${2:filename}, ${3:merge}, ${4:scale})"
+    },
+  "depth_merge": {
+      "prefix": "depth_merge",
+      "body": "pdb.plug_in_depth_merge(${1:image}, ${2:result}, ${3:source1}, ${4:source2}, ${5:depthMap1}, ${6:depthMap2}, ${7:overlap}, ${8:offset}, ${9:scale1}, ${10:scale2})"
+    },
+  "text_layer_get_base_direction": {
+      "prefix": "text_layer_get_base_direction",
+      "body": "pdb.gimp_text_layer_get_base_direction(${1:layer})"
+    },
+  "extension_gimp_help_browser": {
+      "prefix": "extension_gimp_help_browser",
+      "body": "pdb.extension_gimp_help_browser(${1:num_domain_names}, ${2:domain_names}, ${3:num_domain_uris}, ${4:domain_uris})"
+    },
+  "plasma": {
+      "prefix": "plasma",
+      "body": "pdb.plug_in_plasma(${1:image}, ${2:drawable}, ${3:seed}, ${4:turbulence})"
+    },
+  "image_grid_get_spacing": {
+      "prefix": "image_grid_get_spacing",
+      "body": "pdb.gimp_image_grid_get_spacing(${1:image})"
+    },
+  "drawable_mask_intersect": {
+      "prefix": "drawable_mask_intersect",
+      "body": "pdb.gimp_drawable_mask_intersect(${1:drawable})"
+    },
+  "gradient_get_custom_samples": {
+      "prefix": "gradient_get_custom_samples",
+      "body": "pdb.gimp_gradient_get_custom_samples(${1:name}, ${2:num_samples}, ${3:positions}, ${4:reverse})"
+    },
+  "edit_copy": {
+      "prefix": "edit_copy",
+      "body": "pdb.gimp_edit_copy(${1:drawable})"
+    },
+  "brush_set_angle": {
+      "prefix": "brush_set_angle",
+      "body": "pdb.gimp_brush_set_angle(${1:name}, ${2:angle_in})"
+    },
+  "layer_set_offsets": {
+      "prefix": "layer_set_offsets",
+      "body": "pdb.gimp_layer_set_offsets(${1:layer}, ${2:offx}, ${3:offy})"
+    },
+  "palette_rename": {
+      "prefix": "palette_rename",
+      "body": "pdb.gimp_palette_rename(${1:name}, ${2:new_name})"
+    },
+  "file_dds_save": {
+      "prefix": "file_dds_save",
+      "body": "pdb.file_dds_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:compression_format}, ${6:mipmaps}, ${7:savetype}, ${8:format}, ${9:transparent_index}, ${10:mipmap_filter}, ${11:mipmap_wrap}, ${12:gamma_correct}, ${13:srgb}, ${14:gamma}, ${15:perceptual_metric}, ${16:preserve_alpha_coverage}, ${17:alpha_test_threshold})"
+    },
+  "histogram_export": {
+      "prefix": "histogram_export",
+      "body": "pdb.python_fu_histogram_export(${1:img}, ${2:drw}, ${3:filename}, ${4:bucket_size}, ${5:sample_average}, ${6:output_format})"
+    },
+  "selection_grow": {
+      "prefix": "selection_grow",
+      "body": "pdb.gimp_selection_grow(${1:image}, ${2:steps})"
+    },
+  "selection_is_empty": {
+      "prefix": "selection_is_empty",
+      "body": "pdb.gimp_selection_is_empty(${1:image})"
+    },
+  "file_psd_load_thumb": {
+      "prefix": "file_psd_load_thumb",
+      "body": "pdb.file_psd_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "context_set_brush_spacing": {
+      "prefix": "context_set_brush_spacing",
+      "body": "pdb.gimp_context_set_brush_spacing(${1:spacing})"
+    },
+  "filter_pack": {
+      "prefix": "filter_pack",
+      "body": "pdb.plug_in_filter_pack(${1:image}, ${2:drawable})"
+    },
+  "file_sgi_save": {
+      "prefix": "file_sgi_save",
+      "body": "pdb.file_sgi_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:compression})"
+    },
+  "gradients_refresh": {
+      "prefix": "gradients_refresh",
+      "body": "pdb.gimp_gradients_refresh()"
+    },
+  "pixelize2": {
+      "prefix": "pixelize2",
+      "body": "pdb.plug_in_pixelize2(${1:image}, ${2:drawable}, ${3:pixel_width}, ${4:pixel_height})"
+    },
+  "image_grid_set_spacing": {
+      "prefix": "image_grid_set_spacing",
+      "body": "pdb.gimp_image_grid_set_spacing(${1:image}, ${2:xspacing}, ${3:yspacing})"
+    },
+  "image_list": {
+      "prefix": "image_list",
+      "body": "pdb.gimp_image_list()"
+    },
+  "image_remove_vectors": {
+      "prefix": "image_remove_vectors",
+      "body": "pdb.gimp_image_remove_vectors(${1:image}, ${2:vectors})"
+    },
+  "plug_in_details": {
+      "prefix": "plug_in_details",
+      "body": "pdb.plug_in_plug_in_details()"
+    },
+  "image_thaw_channels": {
+      "prefix": "image_thaw_channels",
+      "body": "pdb.gimp_image_thaw_channels(${1:image})"
+    },
+  "sel2path_advanced": {
+      "prefix": "sel2path_advanced",
+      "body": "pdb.plug_in_sel2path_advanced(${1:image}, ${2:drawable}, ${3:align_threshold}, ${4:corner_always_threshold}, ${5:corner_surround}, ${6:corner_threshold}, ${7:error_threshold}, ${8:filter_alternative_surround}, ${9:filter_epsilon}, ${10:filter_iteration_count}, ${11:filter_percent}, ${12:filter_secondary_surround}, ${13:filter_surround}, ${14:keep_knees}, ${15:line_reversion_threshold}, ${16:line_threshold}, ${17:reparameterize_improvement}, ${18:reparameterize_threshold}, ${19:subdivide_search}, ${20:subdivide_surround}, ${21:subdivide_threshold}, ${22:tangent_surround})"
+    },
+  "file_wmf_load": {
+      "prefix": "file_wmf_load",
+      "body": "pdb.file_wmf_load(${1:filename}, ${2:raw_filename}, ${3:resolution}, ${4:width}, ${5:height})"
+    },
+  "layer_get_show_mask": {
+      "prefix": "layer_get_show_mask",
+      "body": "pdb.gimp_layer_get_show_mask(${1:layer})"
+    },
+  "drawable_get_pixel": {
+      "prefix": "drawable_get_pixel",
+      "body": "pdb.gimp_drawable_get_pixel(${1:drawable}, ${2:x_coord}, ${3:y_coord})"
+    },
+  "twain_acquire": {
+      "prefix": "twain_acquire",
+      "body": "pdb.twain_acquire()"
+    },
+  "help_using_simpleobjects": {
+      "prefix": "help_using_simpleobjects",
+      "body": "pdb.gimp_help_using_simpleobjects()"
+    },
+  "text_layer_set_font": {
+      "prefix": "text_layer_set_font",
+      "body": "pdb.gimp_text_layer_set_font(${1:layer}, ${2:font})"
+    },
+  "fractalexplorer": {
+      "prefix": "fractalexplorer",
+      "body": "pdb.plug_in_fractalexplorer(${1:image}, ${2:drawable}, ${3:fractaltype}, ${4:xmin}, ${5:xmax}, ${6:ymin}, ${7:ymax}, ${8:iter}, ${9:cx}, ${10:cy}, ${11:colormode}, ${12:redstretch}, ${13:greenstretch}, ${14:bluestretch}, ${15:redmode}, ${16:greenmode}, ${17:bluemode}, ${18:redinvert}, ${19:greeninvert}, ${20:blueinvert}, ${21:ncolors})"
+    },
+  "buffers_get_list": {
+      "prefix": "buffers_get_list",
+      "body": "pdb.gimp_buffers_get_list(${1:filter})"
+    },
+  "layer_resize": {
+      "prefix": "layer_resize",
+      "body": "pdb.gimp_layer_resize(${1:layer}, ${2:new_width}, ${3:new_height}, ${4:offx}, ${5:offy})"
+    },
+  "fonts_set_popup": {
+      "prefix": "fonts_set_popup",
+      "body": "pdb.gimp_fonts_set_popup(${1:font_callback}, ${2:font_name})"
+    },
+  "fonts_popup": {
+      "prefix": "fonts_popup",
+      "body": "pdb.gimp_fonts_popup(${1:font_callback}, ${2:popup_title}, ${3:initial_font})"
+    },
+  "palette_is_editable": {
+      "prefix": "palette_is_editable",
+      "body": "pdb.gimp_palette_is_editable(${1:name})"
+    },
+  "plugin_domain_register": {
+      "prefix": "plugin_domain_register",
+      "body": "pdb.gimp_plugin_domain_register(${1:domain_name}, ${2:domain_path})"
+    },
+  "item_transform_flip": {
+      "prefix": "item_transform_flip",
+      "body": "pdb.gimp_item_transform_flip(${1:item}, ${2:x0}, ${3:y0}, ${4:x1}, ${5:y1})"
+    },
+  "brush_is_generated": {
+      "prefix": "brush_is_generated",
+      "body": "pdb.gimp_brush_is_generated(${1:name})"
+    },
+  "file_ps_save": {
+      "prefix": "file_ps_save",
+      "body": "pdb.file_ps_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:width}, ${6:height}, ${7:x_offset}, ${8:y_offset}, ${9:unit}, ${10:keep_ratio}, ${11:rotation}, ${12:eps_flag}, ${13:preview}, ${14:level})"
+    },
+  "spread": {
+      "prefix": "spread",
+      "body": "pdb.plug_in_spread(${1:image}, ${2:drawable}, ${3:spread_amount_x}, ${4:spread_amount_y})"
+    },
+  "file_eps_load": {
+      "prefix": "file_eps_load",
+      "body": "pdb.file_eps_load(${1:filename}, ${2:raw_filename})"
+    },
+  "vectors_bezier_stroke_conicto": {
+      "prefix": "vectors_bezier_stroke_conicto",
+      "body": "pdb.gimp_vectors_bezier_stroke_conicto(${1:vectors}, ${2:stroke_id}, ${3:x0}, ${4:y0}, ${5:x1}, ${6:y1})"
+    },
+  "rgb_noise": {
+      "prefix": "rgb_noise",
+      "body": "pdb.plug_in_rgb_noise(${1:image}, ${2:drawable}, ${3:independent}, ${4:correlated}, ${5:noise_1}, ${6:noise_2}, ${7:noise_3}, ${8:noise_4})"
+    },
+  "drawable_foreground_extract": {
+      "prefix": "drawable_foreground_extract",
+      "body": "pdb.gimp_drawable_foreground_extract(${1:drawable}, ${2:mode}, ${3:mask})"
+    },
+  "make_brush_rectangular": {
+      "prefix": "make_brush_rectangular",
+      "body": "pdb.script_fu_make_brush_rectangular(${1:string}, ${2:value}, ${3:value}, ${4:value})"
+    },
+  "context_set_line_dash_pattern": {
+      "prefix": "context_set_line_dash_pattern",
+      "body": "pdb.gimp_context_set_line_dash_pattern(${1:num_dashes}, ${2:dashes})"
+    },
+  "plugin_menu_register": {
+      "prefix": "plugin_menu_register",
+      "body": "pdb.gimp_plugin_menu_register(${1:procedure_name}, ${2:menu_path})"
+    },
+  "progress_set_text": {
+      "prefix": "progress_set_text",
+      "body": "pdb.gimp_progress_set_text(${1:message})"
+    },
+  "layer_set_edit_mask": {
+      "prefix": "layer_set_edit_mask",
+      "body": "pdb.gimp_layer_set_edit_mask(${1:layer}, ${2:edit_mask})"
+    },
+  "channel_new": {
+      "prefix": "channel_new",
+      "body": "pdb.gimp_channel_new(${1:image}, ${2:width}, ${3:height}, ${4:name}, ${5:opacity}, ${6:color})"
+    },
+  "solid_noise": {
+      "prefix": "solid_noise",
+      "body": "pdb.plug_in_solid_noise(${1:image}, ${2:drawable}, ${3:tileable}, ${4:turbulent}, ${5:seed}, ${6:detail}, ${7:xsize}, ${8:ysize})"
+    },
+  "image_set_filename": {
+      "prefix": "image_set_filename",
+      "body": "pdb.gimp_image_set_filename(${1:image}, ${2:filename})"
+    },
+  "image_get_layers": {
+      "prefix": "image_get_layers",
+      "body": "pdb.gimp_image_get_layers(${1:image})"
+    },
+  "image_base_type": {
+      "prefix": "image_base_type",
+      "body": "pdb.gimp_image_base_type(${1:image})"
+    },
+  "colors_channel_mixer": {
+      "prefix": "colors_channel_mixer",
+      "body": "pdb.plug_in_colors_channel_mixer(${1:image}, ${2:drawable}, ${3:monochrome}, ${4:rr_gain}, ${5:rg_gain}, ${6:rb_gain}, ${7:gr_gain}, ${8:gg_gain}, ${9:gb_gain}, ${10:br_gain}, ${11:bg_gain}, ${12:bb_gain})"
+    },
+  "text_layer_get_indent": {
+      "prefix": "text_layer_get_indent",
+      "body": "pdb.gimp_text_layer_get_indent(${1:layer})"
+    },
+  "icc_profile_info": {
+      "prefix": "icc_profile_info",
+      "body": "pdb.plug_in_icc_profile_info(${1:image})"
+    },
+  "bump_map_tiled": {
+      "prefix": "bump_map_tiled",
+      "body": "pdb.plug_in_bump_map_tiled(${1:image}, ${2:drawable}, ${3:bumpmap}, ${4:azimuth}, ${5:elevation}, ${6:depth}, ${7:xofs}, ${8:yofs}, ${9:waterlevel}, ${10:ambient}, ${11:compensate}, ${12:invert}, ${13:type})"
+    },
+  "text_layer_new": {
+      "prefix": "text_layer_new",
+      "body": "pdb.gimp_text_layer_new(${1:image}, ${2:text}, ${3:fontname}, ${4:size}, ${5:unit})"
+    },
+  "drawable_mask_bounds": {
+      "prefix": "drawable_mask_bounds",
+      "body": "pdb.gimp_drawable_mask_bounds(${1:drawable})"
+    },
+  "online_bugs_features": {
+      "prefix": "online_bugs_features",
+      "body": "pdb.gimp_online_bugs_features()"
+    },
+  "context_get_brush_force": {
+      "prefix": "context_get_brush_force",
+      "body": "pdb.gimp_context_get_brush_force()"
+    },
+  "file_load": {
+      "prefix": "file_load",
+      "body": "pdb.gimp_file_load(${1:filename}, ${2:raw_filename})"
+    },
+  "get_module_load_inhibit": {
+      "prefix": "get_module_load_inhibit",
+      "body": "pdb.gimp_get_module_load_inhibit()"
+    },
+  "extension_gimp_help": {
+      "prefix": "extension_gimp_help",
+      "body": "pdb.extension_gimp_help(${1:num_domain_names}, ${2:domain_names}, ${3:num_domain_uris}, ${4:domain_uris})"
+    },
+  "image_set_color_profile_from_file": {
+      "prefix": "image_set_color_profile_from_file",
+      "body": "pdb.gimp_image_set_color_profile_from_file(${1:image}, ${2:uri})"
+    },
+  "procedural_db_dump": {
+      "prefix": "procedural_db_dump",
+      "body": "pdb.gimp_procedural_db_dump(${1:filename})"
+    },
+  "help_using_fileformats": {
+      "prefix": "help_using_fileformats",
+      "body": "pdb.gimp_help_using_fileformats()"
+    },
+  "pencil": {
+      "prefix": "pencil",
+      "body": "pdb.gimp_pencil(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "text_layer_get_hint_style": {
+      "prefix": "text_layer_get_hint_style",
+      "body": "pdb.gimp_text_layer_get_hint_style(${1:layer})"
+    },
+  "selection_to_pattern": {
+      "prefix": "selection_to_pattern",
+      "body": "pdb.script_fu_selection_to_pattern(${1:image}, ${2:drawable}, ${3:string}, ${4:string})"
+    },
+  "drawable_edit_stroke_selection": {
+      "prefix": "drawable_edit_stroke_selection",
+      "body": "pdb.gimp_drawable_edit_stroke_selection(${1:drawable})"
+    },
+  "file_raw_placeholder_cine_load": {
+      "prefix": "file_raw_placeholder_cine_load",
+      "body": "pdb.file_raw_placeholder_cine_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_get_filename": {
+      "prefix": "image_get_filename",
+      "body": "pdb.gimp_image_get_filename(${1:image})"
+    },
+  "xcf_load": {
+      "prefix": "xcf_load",
+      "body": "pdb.gimp_xcf_load(${1:dummy_param}, ${2:filename}, ${3:raw_filename})"
+    },
+  "image_get_colormap": {
+      "prefix": "image_get_colormap",
+      "body": "pdb.gimp_image_get_colormap(${1:image})"
+    },
+  "displace_polar": {
+      "prefix": "displace_polar",
+      "body": "pdb.plug_in_displace_polar(${1:image}, ${2:drawable}, ${3:amount_x}, ${4:amount_y}, ${5:do_x}, ${6:do_y}, ${7:displace_map_x}, ${8:displace_map_y}, ${9:displace_type})"
+    },
+  "cartoon": {
+      "prefix": "cartoon",
+      "body": "pdb.plug_in_cartoon(${1:image}, ${2:drawable}, ${3:mask_radius}, ${4:pct_black})"
+    },
+  "icc_profile_file_info": {
+      "prefix": "icc_profile_file_info",
+      "body": "pdb.plug_in_icc_profile_file_info(${1:profile})"
+    },
+  "file_faxg3_load": {
+      "prefix": "file_faxg3_load",
+      "body": "pdb.file_faxg3_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_delete": {
+      "prefix": "image_delete",
+      "body": "pdb.gimp_image_delete(${1:image})"
+    },
+  "file_raw_placeholder_mos_load": {
+      "prefix": "file_raw_placeholder_mos_load",
+      "body": "pdb.file_raw_placeholder_mos_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_detach_parasite": {
+      "prefix": "image_detach_parasite",
+      "body": "pdb.gimp_image_detach_parasite(${1:image}, ${2:name})"
+    },
+  "layer_get_lock_alpha": {
+      "prefix": "layer_get_lock_alpha",
+      "body": "pdb.gimp_layer_get_lock_alpha(${1:layer})"
+    },
+  "image_insert_channel": {
+      "prefix": "image_insert_channel",
+      "body": "pdb.gimp_image_insert_channel(${1:image}, ${2:channel}, ${3:parent}, ${4:position})"
+    },
+  "unit_get_number_of_built_in_units": {
+      "prefix": "unit_get_number_of_built_in_units",
+      "body": "pdb.gimp_unit_get_number_of_built_in_units()"
+    },
+  "image_get_layer_by_tattoo": {
+      "prefix": "image_get_layer_by_tattoo",
+      "body": "pdb.gimp_image_get_layer_by_tattoo(${1:image}, ${2:tattoo})"
+    },
+  "brushes_popup": {
+      "prefix": "brushes_popup",
+      "body": "pdb.gimp_brushes_popup(${1:brush_callback}, ${2:popup_title}, ${3:initial_brush}, ${4:opacity}, ${5:spacing}, ${6:paint_mode})"
+    },
+  "decompose": {
+      "prefix": "decompose",
+      "body": "pdb.plug_in_decompose(${1:image}, ${2:drawable}, ${3:decompose_type}, ${4:layers_mode})"
+    },
+  "file_raw_placeholder_srw_load": {
+      "prefix": "file_raw_placeholder_srw_load",
+      "body": "pdb.file_raw_placeholder_srw_load(${1:filename}, ${2:raw_filename})"
+    },
+  "progress_get_window_handle": {
+      "prefix": "progress_get_window_handle",
+      "body": "pdb.gimp_progress_get_window_handle()"
+    },
+  "image_duplicate": {
+      "prefix": "image_duplicate",
+      "body": "pdb.gimp_image_duplicate(${1:image})"
+    },
+  "drop_shadow": {
+      "prefix": "drop_shadow",
+      "body": "pdb.script_fu_drop_shadow(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:color}, ${7:value}, ${8:toggle})"
+    },
+  "item_get_parasite": {
+      "prefix": "item_get_parasite",
+      "body": "pdb.gimp_item_get_parasite(${1:item}, ${2:name})"
+    },
+  "image_get_component_active": {
+      "prefix": "image_get_component_active",
+      "body": "pdb.gimp_image_get_component_active(${1:image}, ${2:component})"
+    },
+  "file_exr_load": {
+      "prefix": "file_exr_load",
+      "body": "pdb.file_exr_load(${1:filename}, ${2:raw_filename})"
+    },
+  "web_browser": {
+      "prefix": "web_browser",
+      "body": "pdb.plug_in_web_browser(${1:url})"
+    },
+  "item_transform_2d": {
+      "prefix": "item_transform_2d",
+      "body": "pdb.gimp_item_transform_2d(${1:item}, ${2:source_x}, ${3:source_y}, ${4:scale_x}, ${5:scale_y}, ${6:angle}, ${7:dest_x}, ${8:dest_y})"
+    },
+  "image_get_active_layer": {
+      "prefix": "image_get_active_layer",
+      "body": "pdb.gimp_image_get_active_layer(${1:image})"
+    },
+  "context_set_gradient_blend_color_space": {
+      "prefix": "context_set_gradient_blend_color_space",
+      "body": "pdb.gimp_context_set_gradient_blend_color_space(${1:blend_color_space})"
+    },
+  "text_layer_get_text": {
+      "prefix": "text_layer_get_text",
+      "body": "pdb.gimp_text_layer_get_text(${1:layer})"
+    },
+  "context_get_brush": {
+      "prefix": "context_get_brush",
+      "body": "pdb.gimp_context_get_brush()"
+    },
+  "drawable_levels_stretch": {
+      "prefix": "drawable_levels_stretch",
+      "body": "pdb.gimp_drawable_levels_stretch(${1:drawable})"
+    },
+  "item_transform_matrix": {
+      "prefix": "item_transform_matrix",
+      "body": "pdb.gimp_item_transform_matrix(${1:item}, ${2:coeff_0_0}, ${3:coeff_0_1}, ${4:coeff_0_2}, ${5:coeff_1_0}, ${6:coeff_1_1}, ${7:coeff_1_2}, ${8:coeff_2_0}, ${9:coeff_2_1}, ${10:coeff_2_2})"
+    },
+  "plugin_set_pdb_error_handler": {
+      "prefix": "plugin_set_pdb_error_handler",
+      "body": "pdb.gimp_plugin_set_pdb_error_handler(${1:handler})"
+    },
+  "drawable_set_pixel": {
+      "prefix": "drawable_set_pixel",
+      "body": "pdb.gimp_drawable_set_pixel(${1:drawable}, ${2:x_coord}, ${3:y_coord}, ${4:num_channels}, ${5:pixel})"
+    },
+  "vectors_stroke_translate": {
+      "prefix": "vectors_stroke_translate",
+      "body": "pdb.gimp_vectors_stroke_translate(${1:vectors}, ${2:stroke_id}, ${3:off_x}, ${4:off_y})"
+    },
+  "brush_delete": {
+      "prefix": "brush_delete",
+      "body": "pdb.gimp_brush_delete(${1:name})"
+    },
+  "ccanalyze": {
+      "prefix": "ccanalyze",
+      "body": "pdb.plug_in_ccanalyze(${1:image}, ${2:drawable})"
+    },
+  "plugin_enable_precision": {
+      "prefix": "plugin_enable_precision",
+      "body": "pdb.gimp_plugin_enable_precision()"
+    },
+  "progress_uninstall": {
+      "prefix": "progress_uninstall",
+      "body": "pdb.gimp_progress_uninstall(${1:progress_callback})"
+    },
+  "image_get_precision": {
+      "prefix": "image_get_precision",
+      "body": "pdb.gimp_image_get_precision(${1:image})"
+    },
+  "icc_profile_set_rgb": {
+      "prefix": "icc_profile_set_rgb",
+      "body": "pdb.plug_in_icc_profile_set_rgb(${1:image})"
+    },
+  "file_sunras_load": {
+      "prefix": "file_sunras_load",
+      "body": "pdb.file_sunras_load(${1:filename}, ${2:raw_filename})"
+    },
+  "palette_export_php": {
+      "prefix": "palette_export_php",
+      "body": "pdb.gimp_palette_export_php(${1:dirname}, ${2:string})"
+    },
+  "context_get_ink_size_sensitivity": {
+      "prefix": "context_get_ink_size_sensitivity",
+      "body": "pdb.gimp_context_get_ink_size_sensitivity()"
+    },
+  "file_psd_save": {
+      "prefix": "file_psd_save",
+      "body": "pdb.file_psd_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:compression}, ${6:fill_order})"
+    },
+  "image_add_hguide": {
+      "prefix": "image_add_hguide",
+      "body": "pdb.gimp_image_add_hguide(${1:image}, ${2:yposition})"
+    },
+  "context_get_brush_angle": {
+      "prefix": "context_get_brush_angle",
+      "body": "pdb.gimp_context_get_brush_angle()"
+    },
+  "image_convert_rgb": {
+      "prefix": "image_convert_rgb",
+      "body": "pdb.gimp_image_convert_rgb(${1:image})"
+    },
+  "context_get_paint_mode": {
+      "prefix": "context_get_paint_mode",
+      "body": "pdb.gimp_context_get_paint_mode()"
+    },
+  "file_cel_load": {
+      "prefix": "file_cel_load",
+      "body": "pdb.file_cel_load(${1:filename}, ${2:raw_filename}, ${3:palette_filename})"
+    },
+  "layer_get_edit_mask": {
+      "prefix": "layer_get_edit_mask",
+      "body": "pdb.gimp_layer_get_edit_mask(${1:layer})"
+    },
+  "image_get_guide_orientation": {
+      "prefix": "image_get_guide_orientation",
+      "body": "pdb.gimp_image_get_guide_orientation(${1:image}, ${2:guide})"
+    },
+  "get_parasite": {
+      "prefix": "get_parasite",
+      "body": "pdb.gimp_get_parasite(${1:name})"
+    },
+  "file_gbr_save_internal": {
+      "prefix": "file_gbr_save_internal",
+      "body": "pdb.file_gbr_save_internal(${1:dummy_param}, ${2:image}, ${3:drawable}, ${4:uri}, ${5:raw_uri}, ${6:spacing}, ${7:name})"
+    },
+  "file_pat_save": {
+      "prefix": "file_pat_save",
+      "body": "pdb.file_pat_save(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:description})"
+    },
+  "item_set_tattoo": {
+      "prefix": "item_set_tattoo",
+      "body": "pdb.gimp_item_set_tattoo(${1:item}, ${2:tattoo})"
+    },
+  "image_unset_active_channel": {
+      "prefix": "image_unset_active_channel",
+      "body": "pdb.gimp_image_unset_active_channel(${1:image})"
+    },
+  "file_png_save": {
+      "prefix": "file_png_save",
+      "body": "pdb.file_png_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:interlace}, ${6:compression}, ${7:bkgd}, ${8:gama}, ${9:offs}, ${10:phys}, ${11:time})"
+    },
+  "smudge": {
+      "prefix": "smudge",
+      "body": "pdb.gimp_smudge(${1:drawable}, ${2:pressure}, ${3:num_strokes}, ${4:strokes})"
+    },
+  "file_pdf_save": {
+      "prefix": "file_pdf_save",
+      "body": "pdb.file_pdf_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:vectorize}, ${6:ignore_hidden}, ${7:apply_masks})"
+    },
+  "image_raise_item_to_top": {
+      "prefix": "image_raise_item_to_top",
+      "body": "pdb.gimp_image_raise_item_to_top(${1:image}, ${2:item})"
+    },
+  "file_ico_load": {
+      "prefix": "file_ico_load",
+      "body": "pdb.file_ico_load(${1:filename}, ${2:raw_filename})"
+    },
+  "mblur": {
+      "prefix": "mblur",
+      "body": "pdb.plug_in_mblur(${1:image}, ${2:drawable}, ${3:type}, ${4:length}, ${5:angle}, ${6:center_x}, ${7:center_y})"
+    },
+  "vectors_remove_stroke": {
+      "prefix": "vectors_remove_stroke",
+      "body": "pdb.gimp_vectors_remove_stroke(${1:vectors}, ${2:stroke_id})"
+    },
+  "file_openraster_load_thumb": {
+      "prefix": "file_openraster_load_thumb",
+      "body": "pdb.file_openraster_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "image_undo_freeze": {
+      "prefix": "image_undo_freeze",
+      "body": "pdb.gimp_image_undo_freeze(${1:image})"
+    },
+  "perspective_shadow": {
+      "prefix": "perspective_shadow",
+      "body": "pdb.script_fu_perspective_shadow(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:value}, ${7:color}, ${8:value}, ${9:enum}, ${10:toggle})"
+    },
+  "image_set_active_vectors": {
+      "prefix": "image_set_active_vectors",
+      "body": "pdb.gimp_image_set_active_vectors(${1:image}, ${2:active_vectors})"
+    },
+  "palette_new": {
+      "prefix": "palette_new",
+      "body": "pdb.gimp_palette_new(${1:name})"
+    },
+  "context_get_brush_aspect_ratio": {
+      "prefix": "context_get_brush_aspect_ratio",
+      "body": "pdb.gimp_context_get_brush_aspect_ratio()"
+    },
+  "diffraction": {
+      "prefix": "diffraction",
+      "body": "pdb.plug_in_diffraction(${1:image}, ${2:drawable}, ${3:lam_r}, ${4:lam_g}, ${5:lam_b}, ${6:contour_r}, ${7:contour_g}, ${8:contour_b}, ${9:edges_r}, ${10:edges_g}, ${11:edges_b}, ${12:brightness}, ${13:scattering}, ${14:polarization})"
+    },
+  "context_push": {
+      "prefix": "context_push",
+      "body": "pdb.gimp_context_push()"
+    },
+  "layer_set_apply_mask": {
+      "prefix": "layer_set_apply_mask",
+      "body": "pdb.gimp_layer_set_apply_mask(${1:layer}, ${2:apply_mask})"
+    },
+  "online_developer_web_site": {
+      "prefix": "online_developer_web_site",
+      "body": "pdb.gimp_online_developer_web_site()"
+    },
+  "convolve_default": {
+      "prefix": "convolve_default",
+      "body": "pdb.gimp_convolve_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "metadata_viewer": {
+      "prefix": "metadata_viewer",
+      "body": "pdb.plug_in_metadata_viewer(${1:image})"
+    },
+  "small_tiles": {
+      "prefix": "small_tiles",
+      "body": "pdb.plug_in_small_tiles(${1:image}, ${2:drawable}, ${3:num_tiles})"
+    },
+  "unit_get_abbreviation": {
+      "prefix": "unit_get_abbreviation",
+      "body": "pdb.gimp_unit_get_abbreviation(${1:unit_id})"
+    },
+  "colormap_swap": {
+      "prefix": "colormap_swap",
+      "body": "pdb.plug_in_colormap_swap(${1:image}, ${2:drawable}, ${3:index1}, ${4:index2})"
+    },
+  "file_gih_load": {
+      "prefix": "file_gih_load",
+      "body": "pdb.file_gih_load(${1:dummy_param}, ${2:uri}, ${3:raw_uri})"
+    },
+  "distress_selection": {
+      "prefix": "distress_selection",
+      "body": "pdb.script_fu_distress_selection(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:value}, ${7:toggle}, ${8:toggle})"
+    },
+  "context_set_gradient": {
+      "prefix": "context_set_gradient",
+      "body": "pdb.gimp_context_set_gradient(${1:name})"
+    },
+  "colorify": {
+      "prefix": "colorify",
+      "body": "pdb.plug_in_colorify(${1:image}, ${2:drawable}, ${3:color})"
+    },
+  "drawable_invert": {
+      "prefix": "drawable_invert",
+      "body": "pdb.gimp_drawable_invert(${1:drawable}, ${2:linear})"
+    },
+  "display_get_window_handle": {
+      "prefix": "display_get_window_handle",
+      "body": "pdb.gimp_display_get_window_handle(${1:display})"
+    },
+  "brush_rename": {
+      "prefix": "brush_rename",
+      "body": "pdb.gimp_brush_rename(${1:name}, ${2:new_name})"
+    },
+  "image_freeze_channels": {
+      "prefix": "image_freeze_channels",
+      "body": "pdb.gimp_image_freeze_channels(${1:image})"
+    },
+  "align_layers": {
+      "prefix": "align_layers",
+      "body": "pdb.plug_in_align_layers(${1:image}, ${2:drawable}, ${3:link_after_alignment}, ${4:use_bottom})"
+    },
+  "image_get_channel_by_tattoo": {
+      "prefix": "image_get_channel_by_tattoo",
+      "body": "pdb.gimp_image_get_channel_by_tattoo(${1:image}, ${2:tattoo})"
+    },
+  "context_get_ink_blob_aspect_ratio": {
+      "prefix": "context_get_ink_blob_aspect_ratio",
+      "body": "pdb.gimp_context_get_ink_blob_aspect_ratio()"
+    },
+  "image_add_sample_point": {
+      "prefix": "image_add_sample_point",
+      "body": "pdb.gimp_image_add_sample_point(${1:image}, ${2:position_x}, ${3:position_y})"
+    },
+  "gradient_segment_range_set_blending_function": {
+      "prefix": "gradient_segment_range_set_blending_function",
+      "body": "pdb.gimp_gradient_segment_range_set_blending_function(${1:name}, ${2:start_segment}, ${3:end_segment}, ${4:blending_function})"
+    },
+  "tile_blur": {
+      "prefix": "tile_blur",
+      "body": "pdb.script_fu_tile_blur(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle}, ${5:toggle}, ${6:option})"
+    },
+  "image_height": {
+      "prefix": "image_height",
+      "body": "pdb.gimp_image_height(${1:image})"
+    },
+  "selection_float": {
+      "prefix": "selection_float",
+      "body": "pdb.gimp_selection_float(${1:drawable}, ${2:offx}, ${3:offy})"
+    },
+  "gradient_example": {
+      "prefix": "gradient_example",
+      "body": "pdb.script_fu_gradient_example(${1:value}, ${2:value}, ${3:toggle})"
+    },
+  "file_pnm_save": {
+      "prefix": "file_pnm_save",
+      "body": "pdb.file_pnm_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:raw})"
+    },
+  "brush_get_radius": {
+      "prefix": "brush_get_radius",
+      "body": "pdb.gimp_brush_get_radius(${1:name})"
+    },
+  "file_xpm_load": {
+      "prefix": "file_xpm_load",
+      "body": "pdb.file_xpm_load(${1:filename}, ${2:raw_filename})"
+    },
+  "drawable_threshold": {
+      "prefix": "drawable_threshold",
+      "body": "pdb.gimp_drawable_threshold(${1:drawable}, ${2:channel}, ${3:low_threshold}, ${4:high_threshold})"
+    },
+  "item_transform_translate": {
+      "prefix": "item_transform_translate",
+      "body": "pdb.gimp_item_transform_translate(${1:item}, ${2:off_x}, ${3:off_y})"
+    },
+  "image_get_unit": {
+      "prefix": "image_get_unit",
+      "body": "pdb.gimp_image_get_unit(${1:image})"
+    },
+  "image_get_active_drawable": {
+      "prefix": "image_get_active_drawable",
+      "body": "pdb.gimp_image_get_active_drawable(${1:image})"
+    },
+  "context_get_gradient": {
+      "prefix": "context_get_gradient",
+      "body": "pdb.gimp_context_get_gradient()"
+    },
+  "image_get_layer_by_name": {
+      "prefix": "image_get_layer_by_name",
+      "body": "pdb.gimp_image_get_layer_by_name(${1:image}, ${2:name})"
+    },
+  "file_raw_placeholder_sony_load": {
+      "prefix": "file_raw_placeholder_sony_load",
+      "body": "pdb.file_raw_placeholder_sony_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_raw_placeholder_orf_load": {
+      "prefix": "file_raw_placeholder_orf_load",
+      "body": "pdb.file_raw_placeholder_orf_load(${1:filename}, ${2:raw_filename})"
+    },
+  "sharpen": {
+      "prefix": "sharpen",
+      "body": "pdb.plug_in_sharpen(${1:image}, ${2:drawable}, ${3:percent})"
+    },
+  "get_color_configuration": {
+      "prefix": "get_color_configuration",
+      "body": "pdb.gimp_get_color_configuration()"
+    },
+  "context_get_background": {
+      "prefix": "context_get_background",
+      "body": "pdb.gimp_context_get_background()"
+    },
+  "context_get_palette": {
+      "prefix": "context_get_palette",
+      "body": "pdb.gimp_context_get_palette()"
+    },
+  "autocrop_layer": {
+      "prefix": "autocrop_layer",
+      "body": "pdb.plug_in_autocrop_layer(${1:image}, ${2:drawable})"
+    },
+  "image_set_tattoo_state": {
+      "prefix": "image_set_tattoo_state",
+      "body": "pdb.gimp_image_set_tattoo_state(${1:image}, ${2:tattoo_state})"
+    },
+  "file_svg_load_thumb": {
+      "prefix": "file_svg_load_thumb",
+      "body": "pdb.file_svg_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "context_get_diagonal_neighbors": {
+      "prefix": "context_get_diagonal_neighbors",
+      "body": "pdb.gimp_context_get_diagonal_neighbors()"
+    },
+  "context_set_feather_radius": {
+      "prefix": "context_set_feather_radius",
+      "body": "pdb.gimp_context_set_feather_radius(${1:feather_radius_x}, ${2:feather_radius_y})"
+    },
+  "vectors_copy": {
+      "prefix": "vectors_copy",
+      "body": "pdb.gimp_vectors_copy(${1:vectors})"
+    },
+  "imagemap": {
+      "prefix": "imagemap",
+      "body": "pdb.plug_in_imagemap(${1:image}, ${2:drawable})"
+    },
+  "display_delete": {
+      "prefix": "display_delete",
+      "body": "pdb.gimp_display_delete(${1:display})"
+    },
+  "file_openraster_load": {
+      "prefix": "file_openraster_load",
+      "body": "pdb.file_openraster_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_xz_load": {
+      "prefix": "file_xz_load",
+      "body": "pdb.file_xz_load(${1:filename}, ${2:raw_filename})"
+    },
+  "help_using_docks": {
+      "prefix": "help_using_docks",
+      "body": "pdb.gimp_help_using_docks()"
+    },
+  "gradient_get_number_of_segments": {
+      "prefix": "gradient_get_number_of_segments",
+      "body": "pdb.gimp_gradient_get_number_of_segments(${1:name})"
+    },
+  "image_get_vectors_by_tattoo": {
+      "prefix": "image_get_vectors_by_tattoo",
+      "body": "pdb.gimp_image_get_vectors_by_tattoo(${1:image}, ${2:tattoo})"
+    },
+  "rotate": {
+      "prefix": "rotate",
+      "body": "pdb.plug_in_rotate(${1:image}, ${2:drawable}, ${3:angle}, ${4:everything})"
+    },
+  "vectors_stroke_flip": {
+      "prefix": "vectors_stroke_flip",
+      "body": "pdb.gimp_vectors_stroke_flip(${1:vectors}, ${2:stroke_id}, ${3:flip_type}, ${4:axis})"
+    },
+  "context_set_palette": {
+      "prefix": "context_set_palette",
+      "body": "pdb.gimp_context_set_palette(${1:name})"
+    },
+  "file_ps_load_thumb": {
+      "prefix": "file_ps_load_thumb",
+      "body": "pdb.file_ps_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "colortoalpha": {
+      "prefix": "colortoalpha",
+      "body": "pdb.plug_in_colortoalpha(${1:image}, ${2:drawable}, ${3:color})"
+    },
+  "nlfilt": {
+      "prefix": "nlfilt",
+      "body": "pdb.plug_in_nlfilt(${1:img}, ${2:drw}, ${3:alpha}, ${4:radius}, ${5:filter})"
+    },
+  "context_set_brush_hardness": {
+      "prefix": "context_set_brush_hardness",
+      "body": "pdb.gimp_context_set_brush_hardness(${1:hardness})"
+    },
+  "convolve": {
+      "prefix": "convolve",
+      "body": "pdb.gimp_convolve(${1:drawable}, ${2:pressure}, ${3:convolve_type}, ${4:num_strokes}, ${5:strokes})"
+    },
+  "gradient_segment_set_middle_pos": {
+      "prefix": "gradient_segment_set_middle_pos",
+      "body": "pdb.gimp_gradient_segment_set_middle_pos(${1:name}, ${2:segment}, ${3:pos})"
+    },
+  "context_get_ink_speed_sensitivity": {
+      "prefix": "context_get_ink_speed_sensitivity",
+      "body": "pdb.gimp_context_get_ink_speed_sensitivity()"
+    },
+  "file_gbr_save": {
+      "prefix": "file_gbr_save",
+      "body": "pdb.file_gbr_save(${1:image}, ${2:drawable}, ${3:uri}, ${4:raw_uri}, ${5:spacing}, ${6:description})"
+    },
+  "image_delete_guide": {
+      "prefix": "image_delete_guide",
+      "body": "pdb.gimp_image_delete_guide(${1:image}, ${2:guide})"
+    },
+  "context_set_ink_blob_aspect_ratio": {
+      "prefix": "context_set_ink_blob_aspect_ratio",
+      "body": "pdb.gimp_context_set_ink_blob_aspect_ratio(${1:aspect})"
+    },
+  "file_dicom_save": {
+      "prefix": "file_dicom_save",
+      "body": "pdb.file_dicom_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "context_get_gradient_reverse": {
+      "prefix": "context_get_gradient_reverse",
+      "body": "pdb.gimp_context_get_gradient_reverse()"
+    },
+  "file_webp_save": {
+      "prefix": "file_webp_save",
+      "body": "pdb.file_webp_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:preset}, ${6:lossless}, ${7:quality}, ${8:alpha_quality}, ${9:animation}, ${10:anim_loop}, ${11:minimize_size}, ${12:kf_distance}, ${13:exif}, ${14:iptc}, ${15:xmp}, ${16:delay}, ${17:force_delay})"
+    },
+  "procedural_db_query": {
+      "prefix": "procedural_db_query",
+      "body": "pdb.gimp_procedural_db_query(${1:name}, ${2:blurb}, ${3:help}, ${4:author}, ${5:copyright}, ${6:date}, ${7:proc_type})"
+    },
+  "context_get_brush_spacing": {
+      "prefix": "context_get_brush_spacing",
+      "body": "pdb.gimp_context_get_brush_spacing()"
+    },
+  "image_get_active_channel": {
+      "prefix": "image_get_active_channel",
+      "body": "pdb.gimp_image_get_active_channel(${1:image})"
+    },
+  "file_raw_placeholder_x3f_load": {
+      "prefix": "file_raw_placeholder_x3f_load",
+      "body": "pdb.file_raw_placeholder_x3f_load(${1:filename}, ${2:raw_filename})"
+    },
+  "context_get_gradient_repeat_mode": {
+      "prefix": "context_get_gradient_repeat_mode",
+      "body": "pdb.gimp_context_get_gradient_repeat_mode()"
+    },
+  "sel2path": {
+      "prefix": "sel2path",
+      "body": "pdb.plug_in_sel2path(${1:image}, ${2:drawable})"
+    },
+  "image_grid_set_background_color": {
+      "prefix": "image_grid_set_background_color",
+      "body": "pdb.gimp_image_grid_set_background_color(${1:image}, ${2:bgcolor})"
+    },
+  "checkerboard": {
+      "prefix": "checkerboard",
+      "body": "pdb.plug_in_checkerboard(${1:image}, ${2:drawable}, ${3:check_mode}, ${4:check_size})"
+    },
+  "drawable_get_format": {
+      "prefix": "drawable_get_format",
+      "body": "pdb.gimp_drawable_get_format(${1:drawable})"
+    },
+  "gradient_segment_range_replicate": {
+      "prefix": "gradient_segment_range_replicate",
+      "body": "pdb.gimp_gradient_segment_range_replicate(${1:name}, ${2:start_segment}, ${3:end_segment}, ${4:replicate_times})"
+    },
+  "drawable_update": {
+      "prefix": "drawable_update",
+      "body": "pdb.gimp_drawable_update(${1:drawable}, ${2:x}, ${3:y}, ${4:width}, ${5:height})"
+    },
+  "autostretch_hsv": {
+      "prefix": "autostretch_hsv",
+      "body": "pdb.plug_in_autostretch_hsv(${1:image}, ${2:drawable})"
+    },
+  "file_load_layer": {
+      "prefix": "file_load_layer",
+      "body": "pdb.gimp_file_load_layer(${1:image}, ${2:filename})"
+    },
+  "selection_none": {
+      "prefix": "selection_none",
+      "body": "pdb.gimp_selection_none(${1:image})"
+    },
+  "autocrop": {
+      "prefix": "autocrop",
+      "body": "pdb.plug_in_autocrop(${1:image}, ${2:drawable})"
+    },
+  "image_delete_sample_point": {
+      "prefix": "image_delete_sample_point",
+      "body": "pdb.gimp_image_delete_sample_point(${1:image}, ${2:sample_point})"
+    },
+  "line_nova": {
+      "prefix": "line_nova",
+      "body": "pdb.script_fu_line_nova(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:value}, ${6:value})"
+    },
+  "vectors_stroke_get_point_at_dist": {
+      "prefix": "vectors_stroke_get_point_at_dist",
+      "body": "pdb.gimp_vectors_stroke_get_point_at_dist(${1:vectors}, ${2:stroke_id}, ${3:dist}, ${4:precision})"
+    },
+  "drawable_desaturate": {
+      "prefix": "drawable_desaturate",
+      "body": "pdb.gimp_drawable_desaturate(${1:drawable}, ${2:desaturate_mode})"
+    },
+  "item_is_channel": {
+      "prefix": "item_is_channel",
+      "body": "pdb.gimp_item_is_channel(${1:item})"
+    },
+  "progress_update": {
+      "prefix": "progress_update",
+      "body": "pdb.gimp_progress_update(${1:percentage})"
+    },
+  "brush_get_spikes": {
+      "prefix": "brush_get_spikes",
+      "body": "pdb.gimp_brush_get_spikes(${1:name})"
+    },
+  "attach_parasite": {
+      "prefix": "attach_parasite",
+      "body": "pdb.gimp_attach_parasite(${1:parasite})"
+    },
+  "ripple": {
+      "prefix": "ripple",
+      "body": "pdb.plug_in_ripple(${1:image}, ${2:drawable}, ${3:period}, ${4:amplitude}, ${5:orientation}, ${6:edges}, ${7:waveform}, ${8:antialias}, ${9:tile})"
+    },
+  "drawable_edit_bucket_fill": {
+      "prefix": "drawable_edit_bucket_fill",
+      "body": "pdb.gimp_drawable_edit_bucket_fill(${1:drawable}, ${2:fill_type}, ${3:x}, ${4:y})"
+    },
+  "layer_new_from_visible": {
+      "prefix": "layer_new_from_visible",
+      "body": "pdb.gimp_layer_new_from_visible(${1:image}, ${2:dest_image}, ${3:name})"
+    },
+  "text_layer_set_indent": {
+      "prefix": "text_layer_set_indent",
+      "body": "pdb.gimp_text_layer_set_indent(${1:layer}, ${2:indent})"
+    },
+  "palette_get_colors": {
+      "prefix": "palette_get_colors",
+      "body": "pdb.gimp_palette_get_colors(${1:name})"
+    },
+  "item_is_layer_mask": {
+      "prefix": "item_is_layer_mask",
+      "body": "pdb.gimp_item_is_layer_mask(${1:item})"
+    },
+  "image_get_color_profile": {
+      "prefix": "image_get_color_profile",
+      "body": "pdb.gimp_image_get_color_profile(${1:image})"
+    },
+  "convmatrix": {
+      "prefix": "convmatrix",
+      "body": "pdb.plug_in_convmatrix(${1:image}, ${2:drawable}, ${3:argc_matrix}, ${4:matrix}, ${5:alpha_alg}, ${6:divisor}, ${7:offset}, ${8:argc_channels}, ${9:channels}, ${10:bmode})"
+    },
+  "register_save_handler": {
+      "prefix": "register_save_handler",
+      "body": "pdb.gimp_register_save_handler(${1:procedure_name}, ${2:extensions}, ${3:prefixes})"
+    },
+  "gradient_segment_set_left_pos": {
+      "prefix": "gradient_segment_set_left_pos",
+      "body": "pdb.gimp_gradient_segment_set_left_pos(${1:name}, ${2:segment}, ${3:pos})"
+    },
+  "get_default_comment": {
+      "prefix": "get_default_comment",
+      "body": "pdb.gimp_get_default_comment()"
+    },
+  "item_transform_perspective": {
+      "prefix": "item_transform_perspective",
+      "body": "pdb.gimp_item_transform_perspective(${1:item}, ${2:x0}, ${3:y0}, ${4:x1}, ${5:y1}, ${6:x2}, ${7:y2}, ${8:x3}, ${9:y3})"
+    },
+  "item_get_expanded": {
+      "prefix": "item_get_expanded",
+      "body": "pdb.gimp_item_get_expanded(${1:item})"
+    },
+  "context_get_brush_size": {
+      "prefix": "context_get_brush_size",
+      "body": "pdb.gimp_context_get_brush_size()"
+    },
+  "text_layer_set_line_spacing": {
+      "prefix": "text_layer_set_line_spacing",
+      "body": "pdb.gimp_text_layer_set_line_spacing(${1:layer}, ${2:line_spacing})"
+    },
+  "layer_set_blend_space": {
+      "prefix": "layer_set_blend_space",
+      "body": "pdb.gimp_layer_set_blend_space(${1:layer}, ${2:blend_space})"
+    },
+  "item_attach_parasite": {
+      "prefix": "item_attach_parasite",
+      "body": "pdb.gimp_item_attach_parasite(${1:item}, ${2:parasite})"
+    },
+  "waves": {
+      "prefix": "waves",
+      "body": "pdb.plug_in_waves(${1:image}, ${2:drawable}, ${3:amplitude}, ${4:phase}, ${5:wavelength}, ${6:type}, ${7:reflective})"
+    },
+  "maze": {
+      "prefix": "maze",
+      "body": "pdb.plug_in_maze(${1:image}, ${2:drawable}, ${3:width}, ${4:height}, ${5:tileable}, ${6:algorithm}, ${7:seed}, ${8:multiple}, ${9:offset})"
+    },
+  "context_get_transform_resize": {
+      "prefix": "context_get_transform_resize",
+      "body": "pdb.gimp_context_get_transform_resize()"
+    },
+  "context_set_antialias": {
+      "prefix": "context_set_antialias",
+      "body": "pdb.gimp_context_set_antialias(${1:antialias})"
+    },
+  "threshold_alpha": {
+      "prefix": "threshold_alpha",
+      "body": "pdb.plug_in_threshold_alpha(${1:image}, ${2:drawable}, ${3:threshold})"
+    },
+  "context_get_interpolation": {
+      "prefix": "context_get_interpolation",
+      "body": "pdb.gimp_context_get_interpolation()"
+    },
+  "item_set_lock_content": {
+      "prefix": "item_set_lock_content",
+      "body": "pdb.gimp_item_set_lock_content(${1:item}, ${2:lock_content})"
+    },
+  "getpid": {
+      "prefix": "getpid",
+      "body": "pdb.gimp_getpid()"
+    },
+  "file_jpeg_load": {
+      "prefix": "file_jpeg_load",
+      "body": "pdb.file_jpeg_load(${1:filename}, ${2:raw_filename})"
+    },
+  "sample_colorize": {
+      "prefix": "sample_colorize",
+      "body": "pdb.plug_in_sample_colorize(${1:image}, ${2:dst_drawable}, ${3:sample_drawable}, ${4:hold_inten}, ${5:orig_inten}, ${6:rnd_subcolors}, ${7:guess_missing}, ${8:in_low}, ${9:in_high}, ${10:gamma}, ${11:out_low}, ${12:out_high})"
+    },
+  "gradient_segment_get_left_pos": {
+      "prefix": "gradient_segment_get_left_pos",
+      "body": "pdb.gimp_gradient_segment_get_left_pos(${1:name}, ${2:segment})"
+    },
+  "display_new": {
+      "prefix": "display_new",
+      "body": "pdb.gimp_display_new(${1:image})"
+    },
+  "predator": {
+      "prefix": "predator",
+      "body": "pdb.script_fu_predator(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle}, ${5:value}, ${6:toggle}, ${7:toggle})"
+    },
+  "image_undo_disable": {
+      "prefix": "image_undo_disable",
+      "body": "pdb.gimp_image_undo_disable(${1:image})"
+    },
+  "item_get_parasite_list": {
+      "prefix": "item_get_parasite_list",
+      "body": "pdb.gimp_item_get_parasite_list(${1:item})"
+    },
+  "file_gz_load": {
+      "prefix": "file_gz_load",
+      "body": "pdb.file_gz_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_pix_load": {
+      "prefix": "file_pix_load",
+      "body": "pdb.file_pix_load(${1:filename}, ${2:raw_filename})"
+    },
+  "unit_get_digits": {
+      "prefix": "unit_get_digits",
+      "body": "pdb.gimp_unit_get_digits(${1:unit_id})"
+    },
+  "drawable_histogram": {
+      "prefix": "drawable_histogram",
+      "body": "pdb.gimp_drawable_histogram(${1:drawable}, ${2:channel}, ${3:start_range}, ${4:end_range})"
+    },
+  "drawable_hue_saturation": {
+      "prefix": "drawable_hue_saturation",
+      "body": "pdb.gimp_drawable_hue_saturation(${1:drawable}, ${2:hue_range}, ${3:hue_offset}, ${4:lightness}, ${5:saturation}, ${6:overlap})"
+    },
+  "spinning_globe": {
+      "prefix": "spinning_globe",
+      "body": "pdb.script_fu_spinning_globe(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle}, ${5:toggle}, ${6:value}, ${7:toggle})"
+    },
+  "text_layer_set_font_size": {
+      "prefix": "text_layer_set_font_size",
+      "body": "pdb.gimp_text_layer_set_font_size(${1:layer}, ${2:font_size}, ${3:unit})"
+    },
+  "hot": {
+      "prefix": "hot",
+      "body": "pdb.plug_in_hot(${1:image}, ${2:drawable}, ${3:mode}, ${4:action}, ${5:new_layer})"
+    },
+  "layer_new_from_drawable": {
+      "prefix": "layer_new_from_drawable",
+      "body": "pdb.gimp_layer_new_from_drawable(${1:drawable}, ${2:dest_image})"
+    },
+  "text_layer_get_color": {
+      "prefix": "text_layer_get_color",
+      "body": "pdb.gimp_text_layer_get_color(${1:layer})"
+    },
+  "edit_paste": {
+      "prefix": "edit_paste",
+      "body": "pdb.gimp_edit_paste(${1:drawable}, ${2:paste_into})"
+    },
+  "item_is_selection": {
+      "prefix": "item_is_selection",
+      "body": "pdb.gimp_item_is_selection(${1:item})"
+    },
+  "palette_entry_get_color": {
+      "prefix": "palette_entry_get_color",
+      "body": "pdb.gimp_palette_entry_get_color(${1:name}, ${2:entry_num})"
+    },
+  "context_set_dynamics": {
+      "prefix": "context_set_dynamics",
+      "body": "pdb.gimp_context_set_dynamics(${1:name})"
+    },
+  "palette_offset": {
+      "prefix": "palette_offset",
+      "body": "pdb.python_fu_palette_offset(${1:palette}, ${2:amount})"
+    },
+  "palette_delete": {
+      "prefix": "palette_delete",
+      "body": "pdb.gimp_palette_delete(${1:name})"
+    },
+  "illusion": {
+      "prefix": "illusion",
+      "body": "pdb.plug_in_illusion(${1:image}, ${2:drawable}, ${3:division}, ${4:type})"
+    },
+  "image_find_next_sample_point": {
+      "prefix": "image_find_next_sample_point",
+      "body": "pdb.gimp_image_find_next_sample_point(${1:image}, ${2:sample_point})"
+    },
+  "destripe": {
+      "prefix": "destripe",
+      "body": "pdb.plug_in_destripe(${1:image}, ${2:drawable}, ${3:avg_width})"
+    },
+  "text_layer_set_text": {
+      "prefix": "text_layer_set_text",
+      "body": "pdb.gimp_text_layer_set_text(${1:layer}, ${2:text})"
+    },
+  "gradient_segment_range_delete": {
+      "prefix": "gradient_segment_range_delete",
+      "body": "pdb.gimp_gradient_segment_range_delete(${1:name}, ${2:start_segment}, ${3:end_segment})"
+    },
+  "vectors_bezier_stroke_lineto": {
+      "prefix": "vectors_bezier_stroke_lineto",
+      "body": "pdb.gimp_vectors_bezier_stroke_lineto(${1:vectors}, ${2:stroke_id}, ${3:x0}, ${4:y0})"
+    },
+  "file_raw_load": {
+      "prefix": "file_raw_load",
+      "body": "pdb.file_raw_load(${1:filename}, ${2:raw_filename})"
+    },
+  "context_get_line_dash_pattern": {
+      "prefix": "context_get_line_dash_pattern",
+      "body": "pdb.gimp_context_get_line_dash_pattern()"
+    },
+  "slide": {
+      "prefix": "slide",
+      "body": "pdb.script_fu_slide(${1:image}, ${2:drawable}, ${3:string}, ${4:string}, ${5:font}, ${6:color}, ${7:toggle})"
+    },
+  "context_get_opacity": {
+      "prefix": "context_get_opacity",
+      "body": "pdb.gimp_context_get_opacity()"
+    },
+  "image_clean_all": {
+      "prefix": "image_clean_all",
+      "body": "pdb.gimp_image_clean_all(${1:image})"
+    },
+  "map_object": {
+      "prefix": "map_object",
+      "body": "pdb.plug_in_map_object(${1:image}, ${2:drawable}, ${3:maptype}, ${4:viewpoint_x}, ${5:viewpoint_y}, ${6:viewpoint_z}, ${7:position_x}, ${8:position_y}, ${9:position_z}, ${10:firstaxis_x}, ${11:firstaxis_y}, ${12:firstaxis_z}, ${13:secondaxis_x}, ${14:secondaxis_y}, ${15:secondaxis_z}, ${16:rotationangle_x}, ${17:rotationangle_y}, ${18:rotationangle_z}, ${19:lighttype}, ${20:lightcolor}, ${21:lightposition_x}, ${22:lightposition_y}, ${23:lightposition_z}, ${24:lightdirection_x}, ${25:lightdirection_y}, ${26:lightdirection_z}, ${27:ambient_intensity}, ${28:diffuse_intensity}, ${29:diffuse_reflectivity}, ${30:specular_reflectivity}, ${31:highlight}, ${32:antialiasing}, ${33:tiled}, ${34:newimage}, ${35:transparentbackground}, ${36:radius}, ${37:x_scale}, ${38:y_scale}, ${39:z_scale}, ${40:cylinder_length}, ${41:box_front_drawable}, ${42:box_back_drawable}, ${43:box_top_drawable}, ${44:box_bottom_drawable}, ${45:box_left_drawable}, ${46:box_right_drawable}, ${47:cyl_top_drawable}, ${48:cyl_bottom_drawable})"
+    },
+  "addborder": {
+      "prefix": "addborder",
+      "body": "pdb.script_fu_addborder(${1:image}, ${2:drawable}, ${3:value}, ${4:value}, ${5:color}, ${6:value})"
+    },
+  "brush_new": {
+      "prefix": "brush_new",
+      "body": "pdb.gimp_brush_new(${1:name})"
+    },
+  "image_grid_set_foreground_color": {
+      "prefix": "image_grid_set_foreground_color",
+      "body": "pdb.gimp_image_grid_set_foreground_color(${1:image}, ${2:fgcolor})"
+    },
+  "file_png_save2": {
+      "prefix": "file_png_save2",
+      "body": "pdb.file_png_save2(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:interlace}, ${6:compression}, ${7:bkgd}, ${8:gama}, ${9:offs}, ${10:phys}, ${11:time}, ${12:comment}, ${13:svtrans})"
+    },
+  "context_get_dynamics": {
+      "prefix": "context_get_dynamics",
+      "body": "pdb.gimp_context_get_dynamics()"
+    },
+  "buffer_get_height": {
+      "prefix": "buffer_get_height",
+      "body": "pdb.gimp_buffer_get_height(${1:buffer_name})"
+    },
+  "layer_get_mode": {
+      "prefix": "layer_get_mode",
+      "body": "pdb.gimp_layer_get_mode(${1:layer})"
+    },
+  "vinvert": {
+      "prefix": "vinvert",
+      "body": "pdb.plug_in_vinvert(${1:image}, ${2:drawable})"
+    },
+  "selection_rounded_rectangle": {
+      "prefix": "selection_rounded_rectangle",
+      "body": "pdb.script_fu_selection_rounded_rectangle(${1:image}, ${2:drawable}, ${3:value}, ${4:toggle})"
+    },
+  "file_fli_info": {
+      "prefix": "file_fli_info",
+      "body": "pdb.file_fli_info(${1:filename})"
+    },
+  "guillotine": {
+      "prefix": "guillotine",
+      "body": "pdb.plug_in_guillotine(${1:image}, ${2:drawable})"
+    },
+  "server": {
+      "prefix": "server",
+      "body": "pdb.plug_in_script_fu_server(${1:ip}, ${2:port}, ${3:logfile})"
+    },
+  "brush_get_aspect_ratio": {
+      "prefix": "brush_get_aspect_ratio",
+      "body": "pdb.gimp_brush_get_aspect_ratio(${1:name})"
+    },
+  "image_crop": {
+      "prefix": "image_crop",
+      "body": "pdb.gimp_image_crop(${1:image}, ${2:new_width}, ${3:new_height}, ${4:offx}, ${5:offy})"
+    },
+  "drawable_edit_clear": {
+      "prefix": "drawable_edit_clear",
+      "body": "pdb.gimp_drawable_edit_clear(${1:drawable})"
+    },
+  "context_set_opacity": {
+      "prefix": "context_set_opacity",
+      "body": "pdb.gimp_context_set_opacity(${1:opacity})"
+    },
+  "file_bz2_load": {
+      "prefix": "file_bz2_load",
+      "body": "pdb.file_bz2_load(${1:filename}, ${2:raw_filename})"
+    },
+  "dodgeburn_default": {
+      "prefix": "dodgeburn_default",
+      "body": "pdb.gimp_dodgeburn_default(${1:drawable}, ${2:num_strokes}, ${3:strokes})"
+    },
+  "context_get_pattern": {
+      "prefix": "context_get_pattern",
+      "body": "pdb.gimp_context_get_pattern()"
+    },
+  "patterns_get_list": {
+      "prefix": "patterns_get_list",
+      "body": "pdb.gimp_patterns_get_list(${1:filter})"
+    },
+  "randomize_pick": {
+      "prefix": "randomize_pick",
+      "body": "pdb.plug_in_randomize_pick(${1:image}, ${2:drawable}, ${3:rndm_pct}, ${4:rndm_rcount}, ${5:randomize}, ${6:seed})"
+    },
+  "patterns_popup": {
+      "prefix": "patterns_popup",
+      "body": "pdb.gimp_patterns_popup(${1:pattern_callback}, ${2:popup_title}, ${3:initial_pattern})"
+    },
+  "procedural_db_temp_name": {
+      "prefix": "procedural_db_temp_name",
+      "body": "pdb.gimp_procedural_db_temp_name()"
+    },
+  "register_load_handler": {
+      "prefix": "register_load_handler",
+      "body": "pdb.gimp_register_load_handler(${1:procedure_name}, ${2:extensions}, ${3:prefixes})"
+    },
+  "color_enhance": {
+      "prefix": "color_enhance",
+      "body": "pdb.plug_in_color_enhance(${1:image}, ${2:drawable})"
+    },
+  "dilate": {
+      "prefix": "dilate",
+      "body": "pdb.plug_in_dilate(${1:image}, ${2:drawable}, ${3:propagate_mode}, ${4:propagating_channel}, ${5:propagating_rate}, ${6:direction_mask}, ${7:lower_limit}, ${8:upper_limit})"
+    },
+  "context_set_mypaint_brush": {
+      "prefix": "context_set_mypaint_brush",
+      "body": "pdb.gimp_context_set_mypaint_brush(${1:name})"
+    },
+  "context_set_paint_method": {
+      "prefix": "context_set_paint_method",
+      "body": "pdb.gimp_context_set_paint_method(${1:name})"
+    },
+  "gauss_rle": {
+      "prefix": "gauss_rle",
+      "body": "pdb.plug_in_gauss_rle(${1:image}, ${2:drawable}, ${3:radius}, ${4:horizontal}, ${5:vertical})"
+    },
+  "file_fits_load": {
+      "prefix": "file_fits_load",
+      "body": "pdb.file_fits_load(${1:filename}, ${2:raw_filename})"
+    },
+  "image_convert_color_profile_from_file": {
+      "prefix": "image_convert_color_profile_from_file",
+      "body": "pdb.gimp_image_convert_color_profile_from_file(${1:image}, ${2:uri}, ${3:intent}, ${4:bpc})"
+    },
+  "vectors_export_to_string": {
+      "prefix": "vectors_export_to_string",
+      "body": "pdb.gimp_vectors_export_to_string(${1:image}, ${2:vectors})"
+    },
+  "debug_timer_start": {
+      "prefix": "debug_timer_start",
+      "body": "pdb.gimp_debug_timer_start()"
+    },
+  "text_layer_set_letter_spacing": {
+      "prefix": "text_layer_set_letter_spacing",
+      "body": "pdb.gimp_text_layer_set_letter_spacing(${1:layer}, ${2:letter_spacing})"
+    },
+  "image_get_name": {
+      "prefix": "image_get_name",
+      "body": "pdb.gimp_image_get_name(${1:image})"
+    },
+  "context_swap_colors": {
+      "prefix": "context_swap_colors",
+      "body": "pdb.gimp_context_swap_colors()"
+    },
+  "image_select_round_rectangle": {
+      "prefix": "image_select_round_rectangle",
+      "body": "pdb.gimp_image_select_round_rectangle(${1:image}, ${2:operation}, ${3:x}, ${4:y}, ${5:width}, ${6:height}, ${7:corner_radius_x}, ${8:corner_radius_y})"
+    },
+  "file_raw_placeholder_phaseone_load": {
+      "prefix": "file_raw_placeholder_phaseone_load",
+      "body": "pdb.file_raw_placeholder_phaseone_load(${1:filename}, ${2:raw_filename})"
+    },
+  "noisify": {
+      "prefix": "noisify",
+      "body": "pdb.plug_in_noisify(${1:image}, ${2:drawable}, ${3:independent}, ${4:noise_1}, ${5:noise_2}, ${6:noise_3}, ${7:noise_4})"
+    },
+  "file_tiff_load": {
+      "prefix": "file_tiff_load",
+      "body": "pdb.file_tiff_load(${1:filename}, ${2:raw_filename})"
+    },
+  "context_set_pattern": {
+      "prefix": "context_set_pattern",
+      "body": "pdb.gimp_context_set_pattern(${1:name})"
+    },
+  "file_xwd_save": {
+      "prefix": "file_xwd_save",
+      "body": "pdb.file_xwd_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename})"
+    },
+  "drawable_is_indexed": {
+      "prefix": "drawable_is_indexed",
+      "body": "pdb.gimp_drawable_is_indexed(${1:drawable})"
+    },
+  "gradient_segment_set_left_color": {
+      "prefix": "gradient_segment_set_left_color",
+      "body": "pdb.gimp_gradient_segment_set_left_color(${1:name}, ${2:segment}, ${3:color}, ${4:opacity})"
+    },
+  "buffer_get_bytes": {
+      "prefix": "buffer_get_bytes",
+      "body": "pdb.gimp_buffer_get_bytes(${1:buffer_name})"
+    },
+  "context_set_sample_threshold": {
+      "prefix": "context_set_sample_threshold",
+      "body": "pdb.gimp_context_set_sample_threshold(${1:sample_threshold})"
+    },
+  "image_thumbnail": {
+      "prefix": "image_thumbnail",
+      "body": "pdb.gimp_image_thumbnail(${1:image}, ${2:width}, ${3:height})"
+    },
+  "palette_export_python": {
+      "prefix": "palette_export_python",
+      "body": "pdb.gimp_palette_export_python(${1:dirname}, ${2:string})"
+    },
+  "context_get_antialias": {
+      "prefix": "context_get_antialias",
+      "body": "pdb.gimp_context_get_antialias()"
+    },
+  "refresh": {
+      "prefix": "refresh",
+      "body": "pdb.script_fu_refresh()"
+    },
+  "gradient_segment_set_right_pos": {
+      "prefix": "gradient_segment_set_right_pos",
+      "body": "pdb.gimp_gradient_segment_set_right_pos(${1:name}, ${2:segment}, ${3:pos})"
+    },
+  "recompose": {
+      "prefix": "recompose",
+      "body": "pdb.plug_in_recompose(${1:image}, ${2:drawable})"
+    },
+  "online_main_web_site": {
+      "prefix": "online_main_web_site",
+      "body": "pdb.gimp_online_main_web_site()"
+    },
+  "layer_get_apply_mask": {
+      "prefix": "layer_get_apply_mask",
+      "body": "pdb.gimp_layer_get_apply_mask(${1:layer})"
+    },
+  "layer_flatten": {
+      "prefix": "layer_flatten",
+      "body": "pdb.gimp_layer_flatten(${1:layer})"
+    },
+  "text_layer_set_base_direction": {
+      "prefix": "text_layer_set_base_direction",
+      "body": "pdb.gimp_text_layer_set_base_direction(${1:layer}, ${2:direction})"
+    },
+  "apply_canvas": {
+      "prefix": "apply_canvas",
+      "body": "pdb.plug_in_apply_canvas(${1:image}, ${2:drawable}, ${3:direction}, ${4:depth})"
+    },
+  "version": {
+      "prefix": "version",
+      "body": "pdb.gimp_version()"
+    },
+  "selection_value": {
+      "prefix": "selection_value",
+      "body": "pdb.gimp_selection_value(${1:image}, ${2:x}, ${3:y})"
+    },
+  "exchange": {
+      "prefix": "exchange",
+      "body": "pdb.plug_in_exchange(${1:image}, ${2:drawable}, ${3:from_red}, ${4:from_green}, ${5:from_blue}, ${6:to_red}, ${7:to_green}, ${8:to_blue}, ${9:red_threshold}, ${10:green_threshold}, ${11:blue_threshold})"
+    },
+  "plugin_get_pdb_error_handler": {
+      "prefix": "plugin_get_pdb_error_handler",
+      "body": "pdb.gimp_plugin_get_pdb_error_handler()"
+    },
+  "vectors_stroke_close": {
+      "prefix": "vectors_stroke_close",
+      "body": "pdb.gimp_vectors_stroke_close(${1:vectors}, ${2:stroke_id})"
+    },
+  "layer_new": {
+      "prefix": "layer_new",
+      "body": "pdb.gimp_layer_new(${1:image}, ${2:width}, ${3:height}, ${4:type}, ${5:name}, ${6:opacity}, ${7:mode})"
+    },
+  "brush_set_radius": {
+      "prefix": "brush_set_radius",
+      "body": "pdb.gimp_brush_set_radius(${1:name}, ${2:radius_in})"
+    },
+  "text_layer_get_font_size": {
+      "prefix": "text_layer_get_font_size",
+      "body": "pdb.gimp_text_layer_get_font_size(${1:layer})"
+    },
+  "text_layer_set_color": {
+      "prefix": "text_layer_set_color",
+      "body": "pdb.gimp_text_layer_set_color(${1:layer}, ${2:color})"
+    },
+  "file_jpeg_load_thumb": {
+      "prefix": "file_jpeg_load_thumb",
+      "body": "pdb.file_jpeg_load_thumb(${1:filename}, ${2:thumb_size})"
+    },
+  "image_set_unit": {
+      "prefix": "image_set_unit",
+      "body": "pdb.gimp_image_set_unit(${1:image}, ${2:unit})"
+    },
+  "gradient_save_as_css": {
+      "prefix": "gradient_save_as_css",
+      "body": "pdb.python_fu_gradient_save_as_css(${1:gradient}, ${2:file_name})"
+    },
+  "context_get_ink_blob_angle": {
+      "prefix": "context_get_ink_blob_angle",
+      "body": "pdb.gimp_context_get_ink_blob_angle()"
+    },
+  "drawable_thumbnail": {
+      "prefix": "drawable_thumbnail",
+      "body": "pdb.gimp_drawable_thumbnail(${1:drawable}, ${2:width}, ${3:height})"
+    },
+  "palette_entry_set_color": {
+      "prefix": "palette_entry_set_color",
+      "body": "pdb.gimp_palette_entry_set_color(${1:name}, ${2:entry_num}, ${3:color})"
+    },
+  "file_raw_placeholder_canon_load": {
+      "prefix": "file_raw_placeholder_canon_load",
+      "body": "pdb.file_raw_placeholder_canon_load(${1:filename}, ${2:raw_filename})"
+    },
+  "file_tga_save": {
+      "prefix": "file_tga_save",
+      "body": "pdb.file_tga_save(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:rle}, ${6:origin})"
+    },
+  "context_pop": {
+      "prefix": "context_pop",
+      "body": "pdb.gimp_context_pop()"
+    },
+  "displace": {
+      "prefix": "displace",
+      "body": "pdb.plug_in_displace(${1:image}, ${2:drawable}, ${3:amount_x}, ${4:amount_y}, ${5:do_x}, ${6:do_y}, ${7:displace_map_x}, ${8:displace_map_y}, ${9:displace_type})"
+    },
+  "file_gih_save_internal": {
+      "prefix": "file_gih_save_internal",
+      "body": "pdb.file_gih_save_internal(${1:dummy_param}, ${2:image}, ${3:drawable}, ${4:uri}, ${5:raw_uri}, ${6:spacing}, ${7:name}, ${8:params})"
+    },
+  "carve_it": {
+      "prefix": "carve_it",
+      "body": "pdb.script_fu_carve_it(${1:image}, ${2:drawable}, ${3:drawable}, ${4:toggle})"
+    },
+  "channel_get_show_masked": {
+      "prefix": "channel_get_show_masked",
+      "body": "pdb.gimp_channel_get_show_masked(${1:channel})"
+    },
+  "context_set_gradient_fg_bg_hsv_cw": {
+      "prefix": "context_set_gradient_fg_bg_hsv_cw",
+      "body": "pdb.gimp_context_set_gradient_fg_bg_hsv_cw()"
+    },
+  "file_raw_save2": {
+      "prefix": "file_raw_save2",
+      "body": "pdb.file_raw_save2(${1:image}, ${2:drawable}, ${3:filename}, ${4:raw_filename}, ${5:image_type}, ${6:palette_type})"
+    },
+  "procedural_db_proc_arg": {
+      "prefix": "procedural_db_proc_arg",
+      "body": "pdb.gimp_procedural_db_proc_arg(${1:procedure_name}, ${2:arg_num})"
+    },
+  "context_set_gradient_fg_transparent": {
+      "prefix": "context_set_gradient_fg_transparent",
+      "body": "pdb.gimp_context_set_gradient_fg_transparent()"
+    },
+  "papertile": {
+      "prefix": "papertile",
+      "body": "pdb.plug_in_papertile(${1:image}, ${2:drawable}, ${3:tile_size}, ${4:move_max}, ${5:fractional_type}, ${6:wrap_around}, ${7:centering}, ${8:background_type}, ${9:background_color}, ${10:background_alpha})"
+    },
+  "image_get_uri": {
+      "prefix": "image_get_uri",
+      "body": "pdb.gimp_image_get_uri(${1:image})"
+    },
+  "image_set_color_profile": {
+      "prefix": "image_set_color_profile",
+      "body": "pdb.gimp_image_set_color_profile(${1:image}, ${2:num_bytes}, ${3:color_profile})"
+    },
+  "file_glob": {
+      "prefix": "file_glob",
+      "body": "pdb.file_glob(${1:pattern}, ${2:encoding})"
+    },
+  "font_map": {
+      "prefix": "font_map",
+      "body": "pdb.script_fu_font_map(${1:string}, ${2:toggle}, ${3:toggle}, ${4:string}, ${5:value}, ${6:value}, ${7:option})"
+    },
+  "register": {
+      "prefix": "register",
+      "body": "register(${1:method_name_dashed}, ${2:desc_short}, ${3:desc_long}, ${4:author}, ${5:copyright}, ${6:date}, ${7:menu_label_for_plugin}, ${8:image_type}, [${9:parameters}], [${10:returns}], ${11:method_name_underscored}, menu=${12:menu_path})"
+    },
+  "register_block": {
+      "prefix": "register_block",
+      "body": "register(\n\t${1:method_name_dashed},\n\t${2:desc_short},\n\t${3:desc_long},\n\t${4:author},\n\t${5:copyright},\n\t${6:date},\n\t${7:menu_label_for_plugin},\n\t${8:image_type},\n\t[${9:parameters}],\n\t[${10:returns}],\n\t${11:method_name_underscored},\n\tmenu=${12:menu_path}\n)"
+    }
+}

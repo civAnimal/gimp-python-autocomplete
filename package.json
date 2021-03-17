@@ -1,0 +1,27 @@
+{
+    "name": "gimp-python-autocomplete",
+    "displayName": "GIMP Python AutoComplete",
+    "description": "1000+ AutoComplete Snippets for GIMP's Python plugin API.",
+    "version": "0.0.1",
+    "publisher": "civAnimal",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/civAnimal/gimp-python-autocomplete"
+    },
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "keywords": ["python", "completion", "snippets"],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
